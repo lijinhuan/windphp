@@ -29,42 +29,10 @@ class BaseController  {
 	
 	
 	public function __get($var) {
-		static $control_auto_get = array();
-		if(isset($control_auto_get[$var])){
-			return $control_auto_get[$var];
-		}
 		if($var=='tpl'){
-			$this->useTpl = true;
-			$tpl_name = 'Tpl'.ucfirst($this->conf['template_syntax']);
-			$driver_obj =  new $tpl_name($this->conf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$tpl_name);
-			return $driver_obj;
-		}elseif(substr($var,-3,3)=='_db'){
-			$var_arr = explode("_", $var);
-			$dbconf = $this->conf['db'][$var_arr[0]];
-			$driver_obj = Core::db($dbconf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$var_arr,$var,$dbconf);
-			return $driver_obj;
-		}else{
-			if($var=='file'){
-				return Core::cache($var,$this->conf);
-			}
-			$var_arr = explode("_", $var);
-			$count = count($var_arr);
-			if($count<2){
-				throw new Exception("$var error ！");
-			}	
-			if(in_array($var_arr[0], $this->conf['support_cache'])){
-				return Core::cache($var_arr[0],$this->conf,$var_arr[1]);
-			}
-			$table = substr($var,strlen($var_arr[0].'_'));
-			$driver_obj = Core::model($var_arr[0],$table,$this->conf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$count,$var_arr,$var);
-			return $driver_obj;
+			$this->_useTpl = true;
 		}
+		return Core::setMagicGet($var, $this->conf);
 	}
 	
 	

@@ -37,24 +37,7 @@ class DbModel  {
 	
 	
 	public function __get($var){
-		if($var=='file'){
-			return Core::cache($var,$this->conf);
-		}elseif(substr($var,-3,3)=='_db'){
-			$var_arr = explode("_", $var);
-			$dbconf = $this->conf['db'][$var_arr[0]];
-			return  Core::db($dbconf);
-		}
-		$var_arr = explode("_", $var);
-		$count = count($var_arr);
-		if($count<2){
-			throw new Exception("$var error ！");
-		}
-		if(in_array($var_arr[0], $this->conf['support_cache'])){
-			return Core::cache($var_arr[0],$this->conf,$var_arr[1]);
-		}else{
-			$table = substr($var,strlen($var_arr[0].'_'));
-			return Core::model($var_arr[0],$table,$this->conf);
-		}
+		return Core::setMagicGet($var, $this->conf);
 	}
 	
 	
