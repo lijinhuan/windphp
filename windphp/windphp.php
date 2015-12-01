@@ -133,7 +133,7 @@ trol;
 $runtime_file = FRAMEWORK_PATH.'_wind_runtime.php';
 if(DEBUG > 0) {
 	if(is_file($runtime_file))unlink($runtime_file);
-	include FRAMEWORK_PATH.'base/core.class.php';
+	include FRAMEWORK_PATH.'base/Core.class.php';
 }else{
 	$content = '';
 	$runtime_file = FRAMEWORK_PATH.'_wind_runtime.php';
