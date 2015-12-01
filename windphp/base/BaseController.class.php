@@ -15,10 +15,14 @@ if(!defined('FRAMEWORK_PATH')) {
   
 class BaseController  {
 	protected $_useTpl = false;
+	protected $_action = null;
+	protected $_controller = null;
 	
 	
 	function __construct($conf) {
 		$this->conf = $conf;
+		$this->_controller = $this->conf['controller'];
+		$this->_action = $this->conf['action'];
 	}
 	
 	

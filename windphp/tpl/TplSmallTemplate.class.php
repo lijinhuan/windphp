@@ -32,6 +32,8 @@ class TplSmallTemplate implements TplInterface {
 	
 	public function  show($fileName,$dirName=''){
 		extract($this->vars,1);
+		if(empty($fileName))$fileName=$this->conf['action'];
+		if(empty($dirName))$dirName=$this->conf['controller'];
 		$system_conf = $this->conf;
 		$style_url = $system_conf['app_url'].'views/'.$system_conf['template_theme'].'/style/';
 		include $this->getTpl($fileName,$dirName);
