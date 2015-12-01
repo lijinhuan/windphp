@@ -30,7 +30,7 @@ class TplSmallTemplate implements TplInterface {
 	}
 	
 	
-	public function  show($fileName,$dirName=''){
+	public function  show($fileName='',$dirName=''){
 		extract($this->vars,1);
 		if(empty($fileName))$fileName=$this->conf['action'];
 		if(empty($dirName))$dirName=$this->conf['controller'];
