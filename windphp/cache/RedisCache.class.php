@@ -62,11 +62,13 @@ class RedisCache implements CacheInterface  {
 	
 	
 	public function set($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__redis->Setex($key,$expire,$value);
 	}
 	
 	
 	public function update($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__redis->Setex($key,$expire,$value);
 	}
 	

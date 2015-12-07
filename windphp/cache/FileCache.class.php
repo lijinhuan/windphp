@@ -47,6 +47,7 @@ class FileCache implements CacheInterface  {
 	
 	
 	public function set($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		$dir = APP_PATH.'runtime/data/cache/';
 		if(!is_dir($dir)){
 			if(!mkdir($dir,0777)){
@@ -64,6 +65,7 @@ class FileCache implements CacheInterface  {
 	
 	
 	public function update($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->set($key, $value,$expire);
 	}
 	

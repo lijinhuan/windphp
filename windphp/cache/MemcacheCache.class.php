@@ -66,11 +66,13 @@ class MemcacheCache implements CacheInterface  {
 	
 	
 	public function set($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__memCache->set($key,  $value ,$expire);
 	}
 	
 	
 	public function update($key,$value,$expire=0){
+		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__memCache->set($key,  $value ,$expire);
 	}
 	
