@@ -656,6 +656,17 @@ class Misc {
 	}
 	
 	
+	// 从一个二维数组中取出一个 values() 格式的一维数组，某一列key
+	public static function arrlistValues($arrlist, $key) {
+		if(!$arrlist) return array();
+		$return = array();
+		foreach($arrlist as &$arr) {
+			$return[] = $arr[$key];
+		}
+		return $return;
+	}
+	
+	
 }
 
 
