@@ -176,8 +176,8 @@ class Core {
 	public static function run($conf=array()){
 		//初始化
 		self::init($conf);
-		$control = ucfirst($_GET['action']);
-		$do = ucfirst($_GET['do']);
+		$control = ucfirst(htmlspecialchars($_GET['action']));
+		$do = ucfirst(htmlspecialchars($_GET['do']));
 		$controller_file = APP_PATH.'controllers/'.$control."Controller.class.php";
 		if(is_file($controller_file) && include $controller_file) {
 			$control_class = $control."Controller";
@@ -206,11 +206,13 @@ class Core {
 		$modelName = ucfirst($modelName);
 		static  $db_obj_arr = array();
 		$file = APP_PATH.'models/'.$dbTag.$modelName.'Model'.'.class.php';
+		
 		$static_key = md5($file);
 		if(isset($db_obj_arr[$static_key])) {
 			return $db_obj_arr[$static_key];
 		}
 		if(is_file($file)){
+			echo $file."<br/>";
 			include_once $file;
 			$class = $dbTag.$modelName.'Model';
 			$model = new $class($conf);
