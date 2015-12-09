@@ -212,7 +212,7 @@ class Core {
 			return $db_obj_arr[$static_key];
 		}
 		if(is_file($file)){
-			echo $file."<br/>";
+			
 			include_once $file;
 			$class = $dbTag.$modelName.'Model';
 			$model = new $class($conf);
