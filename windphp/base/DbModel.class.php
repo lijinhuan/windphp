@@ -132,5 +132,14 @@ class DbModel  {
 	}
 	
 	
+	public function count($where=array()){
+		$count = $this->getDb()->fetchOne($this->table,array(
+				'select' => 'COUNT(*) as count',
+				'where' => $where
+		));
+		$count = isset($count['count'])?$count['count']:0;
+		return $count;
+	}
+	
 }
 ?>

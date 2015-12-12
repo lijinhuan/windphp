@@ -120,19 +120,22 @@ class Misc {
 	 * @param bool $http_only
 	 * @return void
 	 */
-	public static function setCookie($var, $value = '', $autoKey,$life = 0, $prefix = true, $httpOnly = false){
+	public static function setCookie($var, $value = '', $autoKey,$life = 0, $prefix = true,$path='',$domain='', $httpOnly = false){
 		$var = ($prefix ? self::$pre : '').$var;
 		if($value == '' || $life < 0){
 			$value = '';
 			$life = -1;
 		}
 		$life = $life > 0 ? time() + $life : ($life < 0 ? time() - 31536000 : 0);
-		$path = $httpOnly && PHP_VERSION < '5.2.0' ? '/; HttpOnly' : '/';
+		if(empty($path)){
+			$path = $httpOnly && PHP_VERSION < '5.2.0' ? '/; HttpOnly' : '/';
+		}
+		
 		$secure = $_SERVER['SERVER_PORT'] == 443 ? 1 : 0;
 		if(PHP_VERSION < '5.2.0'){
-			setcookie($var,self::sysAuth($value,'ENCODE',$autoKey), $life, $path, '', $secure);
+			setcookie($var,self::sysAuth($value,'ENCODE',$autoKey), $life, $path, $domain, $secure);
 		}else{
-			setcookie($var,self::sysAuth($value,'ENCODE',$autoKey), $life, $path, '', $secure, $httpOnly);
+			setcookie($var,self::sysAuth($value,'ENCODE',$autoKey), $life, $path, $domain, $secure, $httpOnly);
 		}
 	}
 	
@@ -666,6 +669,25 @@ class Misc {
 		return $return;
 	}
 	
+	
+	// 将 key 更换为某一列的值，在对多维数组排序后，数字key会丢失，需要此函数
+	public static function arrlistChangeKey($arrlist, $key, $pre = '') {
+		$return = array();
+		if(empty($arrlist)) return $return;
+		foreach($arrlist as $arr) {
+			$return[$pre.''.$arr[$key]] = $arr;
+		}
+		return $return;
+	}
+	
+	
+	// 判断一个字符串是否在另外一个字符串里面，分隔符 ,
+	public static function inString($s, $str) {
+		if(!$s || !$str) return FALSE;
+		$s = ",$s,";
+		$str = ",$str,";
+		return strpos($str, $s) !== FALSE;
+	}
 	
 }
 

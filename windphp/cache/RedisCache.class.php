@@ -56,18 +56,27 @@ class RedisCache implements CacheInterface  {
 	
 	
 	public function get($key){
-		return $this->__redis->get($key);
+		$result =  $this->__redis->get($key);
+		$json_str = str_replace('\\', '', $result);
+		$out_arr = array();
+		preg_match('/\{.*\}/', $json_str, $out_arr);
+		if (!empty($out_arr)) {
+			$result = json_decode($out_arr[0], TRUE);
+		}
+		return $result;
 	}
 	
 	
 	
 	public function set($key,$value,$expire=0){
+		if(is_array($value)){$value = json_encode($value);}
 		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__redis->Setex($key,$expire,$value);
 	}
 	
 	
 	public function update($key,$value,$expire=0){
+		if(is_array($value)){$value = json_encode($value);}
 		if(empty($expire))$expire = $this->conf['data_default_cache_time'];
 		return $this->__redis->Setex($key,$expire,$value);
 	}
