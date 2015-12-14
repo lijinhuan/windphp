@@ -1,7 +1,8 @@
 框架说明文档：
 
 一、启动
-       1、访问 index.php
+
+         1、访问 index.php
        
 	   2、url说明：
 					（1）http://shop.tongpai.tv/?index-index-name-lijinhuan.html
@@ -12,6 +13,7 @@
 		
 		
 二、控制器
+
        1、在controllers下，如 IndexController.class.php 表示Index控制器
        2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
 	   
@@ -24,6 +26,7 @@
 		?>
 	   
 三、模型
+
 	   1、在models下，如 BbsThreadModel.class.php 表示bbs数据库服务器的thread模型
 	   2、在控制器中调用模型，$this->bbs_thread->fetchOne(array('where'=>array('tid'=>1))); 表示获取tid为1的帖子
 	   3、模型与confing/conf.inc.php 里面的db绑定，如'db' => array('bbs' => array(...))，建立模型时bbs就是这里来的
@@ -40,6 +43,7 @@
 	   
 	   
 四、数据库操作
+
 	  1、查询：在模型在 $this->fetchAll(array(
 				'where' => array('fid'=>2),
 				'select' => 'id',
@@ -64,6 +68,7 @@
 
 	  
 五、视图操作
+
 	 1、在Index控制器的Index的方法中 $this->tpl->show() ; 表示加载views下的default主题（在conf.inc.php中配置）下的Index目录的tpl.Index.php的文件
 	 2、数据渲染：$this->tpl->assign('a',$a);表示把$a表示渲染到模板中，在模板中可以{$a}这样子调用
 	 3、支持原生模式
@@ -71,10 +76,12 @@
 		
 		
 六、配置文件调用
+
 	在控制或者模型中可以使用$this->conf['autokey'] 这样子调用参数
 	
 
 七、自定义类与系统帮助类
+
 	...
 		
 
