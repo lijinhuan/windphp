@@ -44,13 +44,13 @@
 	   
 四、数据库操作
 
-	  1、查询：在模型在 $this->fetchAll(array(
+	  1、查询：在模型中 $this->fetchAll(array(
 				'where' => array('fid'=>2),
 				'select' => 'id',
 				'order' => 'sort desc',
 				'limit' => '1,30',
 		 ));
-		 $this->fetchOne(); 查询方法如上，表示查询一条
+		 $this->fetchOne(array('tid'=>2)); 查询方法如上，表示查询一条
 		 
 	  2、删除：
 		$this->delete(array('where' => array('fid'=>2),'limit'=>1)); 
