@@ -122,6 +122,8 @@ class TplSmallTemplate implements TplInterface {
 	
 	
 	public function getFile($fileName,$dirName='default'){
+		if(empty($fileName))$fileName=$this->conf['action'];
+		if(empty($dirName))$dirName=$this->conf['controller'];
 		return sprintf( "%s%s/tpl.%s.php", APP_PATH.'views/', $dirName, $fileName );
 	}
 	
