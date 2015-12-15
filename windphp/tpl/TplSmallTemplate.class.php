@@ -18,15 +18,22 @@ class TplSmallTemplate implements TplInterface {
 	
 	public $vars = array();			//变量表
 	public $force = 1;		// 强制判断文件是否过期，会影响效率
-	public $var_regexp = "\@?\\\$[a-zA-Z_]\w*(?:\[[\w\.\"\'\$]+\])*";// \[\]
+	public $var_regexp = "\@?\\\$[a-zA-Z_]\w*(?:\[[\w\.\"\'\$]+\])*";
 	public $vtag_regexp = "\<\?=(\@?\\\$[a-zA-Z_]\w*(?:\[[\w\.\"\'\[\]\$]+\])*)\?\>";
-	public $const_regexp = "\{([\w]+)\}";
+	public $const_regexp = "";
 	public $conf = array();
 	public $json = array();
+	public $tag_left = "\{";
+	public $tag_right = "\}";
 	
 	
 	public function __construct($conf){
 		$this->conf = $conf;
+		if(isset($this->conf['tpl_tag']) and !empty($this->conf['tpl_tag'])){
+			$this->tag_left = $this->conf['tpl_tag']['left'];
+			$this->tag_right = $this->conf['tpl_tag']['right'];
+		}
+		$this->const_regexp = $this->tag_left."([\w]+)".$this->tag_right; 
 	}
 	
 	
@@ -73,31 +80,31 @@ class TplSmallTemplate implements TplInterface {
 	public function complie($viewfile,$dirName) {
 		$conf = $this->conf;
 		$str = file_get_contents($viewfile);
-		$str = preg_replace ( "/\{template\s+(.+)\}/", "<?php include \$this->getTpl(\\1) ?>", $str );
-		$str = preg_replace ( "/\{include\s+(.+)\}/", "<?php include \\1; ?>", $str );
-		$str = preg_replace ( "/\{php\s+(.+)\}/", "<?php \\1?>", $str );
-		$str = preg_replace ( "/\{if\s+(.+?)\}/", "<?php if(\\1) { ?>", $str );
-		$str = preg_replace ( "/\{else\}/", "<?php } else { ?>", $str );
-		$str = preg_replace ( "/\{elseif\s+(.+?)\}/", "<?php } elseif (\\1) { ?>", $str );
-		$str = preg_replace ( "/\{\/if\}/", "<?php } ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."template\s+(.+)".$this->tag_right."/", "<?php include \$this->getTpl(\\1) ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."include\s+(.+)".$this->tag_right."/", "<?php include \\1; ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."php\s+(.+)".$this->tag_right."/", "<?php \\1?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."if\s+(.+?)".$this->tag_right."/", "<?php if(\\1) { ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."else".$this->tag_right."/", "<?php } else { ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."elseif\s+(.+?)".$this->tag_right."/", "<?php } elseif (\\1) { ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."\/if".$this->tag_right."/", "<?php } ?>", $str );
 		//for 循环
-		$str = preg_replace("/\{for\s+(.+?)\}/","<?php for(\\1) { ?>",$str);
-		$str = preg_replace("/\{\/for\}/","<?php } ?>",$str);
+		$str = preg_replace("/".$this->tag_left."for\s+(.+?)".$this->tag_right."/","<?php for(\\1) { ?>",$str);
+		$str = preg_replace("/".$this->tag_left."\/for".$this->tag_right."/","<?php } ?>",$str);
 		//++ --
-		$str = preg_replace("/\{\+\+(.+?)\}/","<?php ++\\1; ?>",$str);
-		$str = preg_replace("/\{\-\-(.+?)\}/","<?php ++\\1; ?>",$str);
-		$str = preg_replace("/\{(.+?)\+\+\}/","<?php \\1++; ?>",$str);
-		$str = preg_replace("/\{(.+?)\-\-\}/","<?php \\1--; ?>",$str);
-		$str = preg_replace ( "/\{loop\s+(\S+)\s+(\S+)\}/", "<?php if(is_array(\\1)) foreach(\\1 AS \\2) { ?>", $str );
-		$str = preg_replace ( "/\{loop\s+(\S+)\s+(\S+)\s+(\S+)\}/", "<?php  if(is_array(\\1)) foreach(\\1 AS \\2 => \\3) { ?>", $str );
-		$str = preg_replace ( "/\{\/loop\}/", "<?php } ?>", $str );
-		$str = preg_replace ( "/\{([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff:]*\(([^{}]*)\))\}/", "<?php echo \\1;?>", $str );
-		$str = preg_replace ( "/\{\\$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff:]*\(([^{}]*)\))\}/", "<?php echo \\1;?>", $str );
-		$str = preg_replace ( "/\{(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\}/", "<?php echo \\1;?>", $str );
-		$str = preg_replace("/\{(\\$[a-zA-Z0-9_\[\]\'\"\$\x7f-\xff]+)\}/s", "{\$this->addquote(\\1)}",$str);
-		$str = preg_replace('/\{(\$this\-\>\w+\(.*?\))\}/is', "<?php echo \\1;?>", $str); // 变量
-		$str = preg_replace('/\{func\s+(.*?)\}/is', "<?php  \\1;?>", $str); // 变量
-		$str = preg_replace('/\{funcecho\s+(.*?)\}/is', "<?php echo  \\1;?>", $str); // 变量
+		$str = preg_replace("/".$this->tag_left."\+\+(.+?)".$this->tag_right."/","<?php ++\\1; ?>",$str);
+		$str = preg_replace("/".$this->tag_left."\-\-(.+?)".$this->tag_right."/","<?php ++\\1; ?>",$str);
+		$str = preg_replace("/".$this->tag_left."(.+?)\+\+".$this->tag_right."/","<?php \\1++; ?>",$str);
+		$str = preg_replace("/".$this->tag_left."(.+?)\-\-".$this->tag_right."/","<?php \\1--; ?>",$str);
+		$str = preg_replace ( "/".$this->tag_left."loop\s+(\S+)\s+(\S+)".$this->tag_right."/", "<?php if(is_array(\\1)) foreach(\\1 AS \\2) { ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."loop\s+(\S+)\s+(\S+)\s+(\S+)".$this->tag_right."/", "<?php  if(is_array(\\1)) foreach(\\1 AS \\2 => \\3) { ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."\/loop".$this->tag_right."/", "<?php } ?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff:]*\(([^{}]*)\))".$this->tag_right."/", "<?php echo \\1;?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."\\$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff:]*\(([^{}]*)\))".$this->tag_right."/", "<?php echo \\1;?>", $str );
+		$str = preg_replace ( "/".$this->tag_left."(\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)".$this->tag_right."/", "<?php echo \\1;?>", $str );
+		$str = preg_replace("/".$this->tag_left."(\\$[a-zA-Z0-9_\[\]\'\"\$\x7f-\xff]+)".$this->tag_right."/s", "<?php echo \$this->addquote(\\1); ?>",$str);
+		$str = preg_replace("/".$this->tag_left."(\$this\-\>\w+\(.*?\))".$this->tag_right."/is", "<?php echo \\1;?>", $str); // 变量
+		$str = preg_replace("/".$this->tag_left."func\s+(.*?)".$this->tag_right."/is", "<?php  \\1;?>", $str); // 变量
+		$str = preg_replace("/".$this->tag_left."funcecho\s+(.*?)".$this->tag_right."/is", "<?php echo  \\1;?>", $str); // 变量
 		$str = "<?php defined('FRAMEWORK_PATH') or exit('No permission resources.'); ?>" . $str;
 		return $str;
 	}
