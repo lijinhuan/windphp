@@ -280,6 +280,37 @@ class Misc {
 	
 	
 	
+	public static  function showMmsg($msg,$url='',$s=5000){
+		$str=<<<MMSG
+			<html>
+				<head>
+					<meta charset="utf-8">
+				    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+				    <meta name="viewport" content="width=device-width, initial-scale=1">
+					<title>消息提示</title>
+				</head>
+				<body>
+				  <div style="text-align:center;">
+					<div style="-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-moz-box-shadow: 0 1px 1px #fff inset;-webkit-box-shadow: 0 1px 1px #fff inset;box-shadow: 0 1px 1px #fff inset;;padding:10px 30px;margin-top:10%;background:pink;border: 1px solid #333;">
+					   {$msg}
+					</div>
+				  </div>
+				 <script language="javascript">
+				     setTimeout("redirect('{$url}');",$s);
+				 	 function redirect(url){
+				     	if(url){
+							window.location.href = url;
+						}
+					 }
+				 </script>
+				</body>
+			</html>
+MMSG;
+						exit($str);
+	}
+	
+	
+	
 	
 	public static function getParam($k, $var = 'G') {
 		switch($var) {

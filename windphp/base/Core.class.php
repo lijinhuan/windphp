@@ -124,7 +124,7 @@ class Core {
 				}
 				include_once($controller_file);
 			}else if(strpos($className, "Model")!==false){
-				$model_file = APP_PATH.'models/'.$className.'Model.class.php';
+				$model_file = APP_PATH.'models/'.$className.'.class.php';
 				if(!is_file($model_file)){
 					throw new Exception("$model_file 文件不存在！");
 				}
