@@ -203,6 +203,7 @@ class Core {
 	 */
 	public static function model($dbTag,$modelName,$conf=array()){
 		$dbTag = ucfirst($dbTag);
+		$table_name = $modelName;
 		$modelName = ucfirst($modelName);
 		static  $db_obj_arr = array();
 		$file = APP_PATH.'models/'.$dbTag.$modelName.'Model'.'.class.php';
@@ -212,7 +213,6 @@ class Core {
 			return $db_obj_arr[$static_key];
 		}
 		if(is_file($file)){
-			
 			include_once $file;
 			$class = $dbTag.$modelName.'Model';
 			$model = new $class($conf);
@@ -222,7 +222,7 @@ class Core {
 		}else{
 			$obj = new DbModel($conf);
 			$obj->dbTag = $dbTag;
-			$obj->table = $modelName;
+			$obj->table = $table_name;
 			$db_obj_arr[$static_key] = $obj;
 			return $obj;
 		}
