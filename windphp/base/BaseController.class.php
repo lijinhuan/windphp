@@ -14,7 +14,6 @@ if(!defined('FRAMEWORK_PATH')) {
 }
   
 class BaseController  {
-	protected $_useTpl = false;
 	protected $_action = null;
 	protected $_controller = null;
 	
@@ -27,32 +26,12 @@ class BaseController  {
 	
 	
 	public function __destruct(){
-		if($this->_useTpl){$this->outPut();}
 		$this->debug();
 	}
 	
 	
 	public function __get($var) {
-		if($var=='tpl'){
-			$this->_useTpl = true;
-		}
 		return Core::setMagicGet($var, $this->conf);
-	}
-	
-	
-	
-	/**
-	 * @todo 压缩输出
-	 */
-	public function outPut(){
-		$content = ob_get_clean();
-		if (function_exists('ob_gzhandler')) {
-			ob_start('ob_gzhandler');
-		} else {
-			ob_start();
-		}
-		echo $content;
-		ob_end_flush();
 	}
 	
 	

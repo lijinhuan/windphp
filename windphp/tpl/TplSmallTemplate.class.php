@@ -44,6 +44,14 @@ class TplSmallTemplate implements TplInterface {
 		$system_conf = $this->conf;
 		$style_url = $system_conf['app_url'].'views/'.$system_conf['template_theme'].'/style/';
 		include $this->getTpl($fileName,$dirName);
+		$content = ob_get_clean();
+		if (function_exists('ob_gzhandler')) {
+			ob_start('ob_gzhandler');
+		} else {
+			ob_start();
+		}
+		echo $content;
+		ob_end_flush();
 	}
 	
 	

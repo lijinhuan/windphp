@@ -150,6 +150,7 @@ class Core {
 			exit(json_encode(array('status'=>$status,'msg'=>$e->getMessage())));
 		}
 		if(DEBUG>0){
+			echo "<html><head><title>错误提示</title></head><body>";
 			echo '<div style="padding:20px;border:2px solid red;background:#e1e1e1;margin:10px;border-radius:10px;">';
 			echo "<font color=green><b>Message:</b></font> ".$e->getMessage()."<br/>";
 			echo "<font color=green><b>File:</b></font> " .  $e->getFile()."<br/>";
@@ -161,11 +162,11 @@ class Core {
 				echo "</pre>";
 			}
 			echo "<font color=green><b>PowerBy: </b></font>windphp framework<br/>";
-			echo '</div>';
+			echo '</div></body></html>';
 		}else{
 			echo $e->getMessage();
 		}
-		exit;
+		exit();
 	}
 	
 	
