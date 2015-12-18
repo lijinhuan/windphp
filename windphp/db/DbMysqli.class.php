@@ -67,6 +67,11 @@ class DbMysqli implements DbInterface  {
 	}
 	
 	
+	public function fetchAssoc($re){
+		return mysqli_fetch_assoc($re);
+	}
+	
+	
 	/**
 	 * 获取一条数据返回数组
 	 */

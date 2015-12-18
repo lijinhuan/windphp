@@ -132,6 +132,11 @@ class DbModel  {
 	}
 	
 	
+	public function fetchAssoc($re){
+		return $this->getDb()->fetchAssoc($re);
+	}
+	
+	
 	public function count($where=array()){
 		$count = $this->getDb()->fetchOne($this->table,array(
 				'select' => 'COUNT(*) as count',
