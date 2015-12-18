@@ -376,7 +376,8 @@ MMSG;
 	 */
 	public static function inputClean($field){
 		$result = '';
-		$clean_val = isset($_REQUEST[$field]) ? $_REQUEST[$field] : '';
+		$clean_val = isset($_GET[$field]) ? $_GET[$field] : '';
+		$clean_val = isset($_POST[$field]) ? $_POST[$field] : $clean_val;
 		if( !empty($clean_val) ){
 			if( is_array($clean_val) ){
 				foreach($clean_val as $key => $value){
