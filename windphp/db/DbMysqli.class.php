@@ -212,7 +212,8 @@ class DbMysqli implements DbInterface  {
 		$set = '';
 		$c = ' , ';
 		foreach ($keys as $k=>$v){
-			if(is_numeric($v)){
+			
+			if(is_numeric($v) and strlen($v)<10){
 				$set .= ' `'.$k.'`='.intval($v).$c;
 			}elseif (is_array($v)){
 				if(empty($v)){
@@ -243,7 +244,7 @@ class DbMysqli implements DbInterface  {
 		$where = '';
 		$c = ' and ';
 		foreach ($keys as $k=>$v){
-			if(is_numeric($v)){
+			if(is_numeric($v) and strlen($v)<10){
 				$where .= ' `'.$k.'`='.intval($v).$c;
 			}elseif(is_array($v)){
 				if(empty($v)){
