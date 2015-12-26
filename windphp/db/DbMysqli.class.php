@@ -213,7 +213,7 @@ class DbMysqli implements DbInterface  {
 		$c = ' , ';
 		foreach ($keys as $k=>$v){
 			
-			if(is_numeric($v) and strlen($v)<10){
+			if(is_int($v) and strlen($v)<10){
 				$set .= ' `'.$k.'`='.intval($v).$c;
 			}elseif (is_array($v)){
 				if(empty($v)){
@@ -244,7 +244,7 @@ class DbMysqli implements DbInterface  {
 		$where = '';
 		$c = ' and ';
 		foreach ($keys as $k=>$v){
-			if(is_numeric($v) and strlen($v)<10){
+			if(is_int($v) and strlen($v)<10){
 				$where .= ' `'.$k.'`='.intval($v).$c;
 			}elseif(is_array($v)){
 				if(empty($v)){
@@ -262,22 +262,22 @@ class DbMysqli implements DbInterface  {
 					}else if(isset($v['like'])){
 						$where .= ' `'.$k.'` like \''.addcslashes(str_replace("'", "''", $v['like']), "\000\n\r\\\032").'\'' .$c;
 					}else if(isset($v['gt'])){
-						$value = is_numeric($v['gt'])?$v['gt']:intval($v['gt']);
+						$value = is_int($v['gt'])?$v['gt']:intval($v['gt']);
 						$where .= ' `'.$k.'` > '.$value . $c;
 					}else if(isset($v['gte'])){
-						$value = is_numeric($v['gte'])?$v['gte']:intval($v['gte']);
+						$value = is_int($v['gte'])?$v['gte']:intval($v['gte']);
 						$where .= ' `'.$k.'` >= '.$value . $c;
 					}else if(isset($v['lt'])){
-						$value = is_numeric($v['lt'])?$v['lt']:intval($v['lt']);
+						$value = is_int($v['lt'])?$v['lt']:intval($v['lt']);
 						$where .= ' `'.$k.'` < '.$value . $c;
 					}else if(isset($v['lte'])){
-						$value = is_numeric($v['lte'])?$v['lte']:intval($v['lte']);
+						$value = is_int($v['lte'])?$v['lte']:intval($v['lte']);
 						$where .= ' `'.$k.'` <= '.$value . $c;
 					}else if(isset($v['neq'])){
 						if($v['neq']==''){
 							$value = "''";
 						}else{
-							$value = is_numeric($v['neq'])?$v['neq']:intval($v['neq']);
+							$value = is_int($v['neq'])?$v['neq']:intval($v['neq']);
 						}
 						
 						$where .= ' `'.$k.'` != '.$value . $c;
