@@ -280,6 +280,7 @@ if(!defined('FRAMEWORK_PATH'))
     	curl_setopt($ci, CURLOPT_SSL_VERIFYHOST, false);
     	curl_setopt($ci, CURLOPT_HEADER, false);
     	$headers = (array)$extheaders;
+    	
     	switch ($method)
     	{
     		case 'POST':
@@ -295,9 +296,11 @@ if(!defined('FRAMEWORK_PATH'))
     					curl_setopt($ci, CURLOPT_POSTFIELDS, $params);
     					$headers[] = 'Expect: ';
     				}
-    				else
+    				elseif(is_array($params))
     				{
     					curl_setopt($ci, CURLOPT_POSTFIELDS, http_build_query($params));
+    				}else{
+    					curl_setopt($ci, CURLOPT_POSTFIELDS, $params);
     				}
     			}
     			break;
