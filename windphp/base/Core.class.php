@@ -203,6 +203,7 @@ class Core {
 	 * @todo 实例化模型
 	 */
 	public static function model($dbTag,$modelName,$conf=array()){
+		
 		$dbTag = ucfirst($dbTag);
 		$table_name = $modelName;
 		$modelName = ucfirst($modelName);
@@ -216,9 +217,11 @@ class Core {
 		if(is_file($file)){
 			include_once $file;
 			$class = $dbTag.$modelName.'Model';
+			
 			$model = new $class($conf);
 			$model->dbTag = $dbTag;
 			$db_obj_arr[$static_key] = $model;
+			
 			return $model;
 		}else{
 			$obj = new DbModel($conf);

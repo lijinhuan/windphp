@@ -279,7 +279,8 @@ class Misc {
 	}
 	
 	
-	public static  function showMmsg($msg,$url='',$s=5000){
+	
+	public static  function showMmsg($msg,$url='',$s=2000){
 		$str=<<<MMSG
 			<html>
 				<head>

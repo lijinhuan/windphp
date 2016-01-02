@@ -72,6 +72,9 @@ class DbMysqli implements DbInterface  {
 	}
 	
 	
+	
+	
+	
 	/**
 	 * 获取一条数据返回数组
 	 */
@@ -133,6 +136,20 @@ class DbMysqli implements DbInterface  {
 		return $this->query($sql);
 	}
 	
+	
+	public function autocommit($auto=true){
+		return mysqli_autocommit($this->mysqliLink,$auto);
+	}
+	
+	
+	public function commit(){
+		return mysqli_commit($this->mysqliLink);
+	}
+	
+	
+	public function rollback(){
+		return mysqli_rollback($this->mysqliLink);
+	}
 	
 	
 	public function insert($table='',$data=array()){
@@ -213,6 +230,7 @@ class DbMysqli implements DbInterface  {
 		$c = ' , ';
 		foreach ($keys as $k=>$v){
 			
+			
 			if(is_int($v) and strlen($v)<10){
 				$set .= ' `'.$k.'`='.intval($v).$c;
 			}elseif (is_array($v)){
@@ -244,6 +262,7 @@ class DbMysqli implements DbInterface  {
 		$where = '';
 		$c = ' and ';
 		foreach ($keys as $k=>$v){
+			
 			if(is_int($v) and strlen($v)<10){
 				$where .= ' `'.$k.'`='.intval($v).$c;
 			}elseif(is_array($v)){
@@ -262,21 +281,26 @@ class DbMysqli implements DbInterface  {
 					}else if(isset($v['like'])){
 						$where .= ' `'.$k.'` like \''.addcslashes(str_replace("'", "''", $v['like']), "\000\n\r\\\032").'\'' .$c;
 					}else if(isset($v['gt'])){
+					
 						$value = is_int($v['gt'])?$v['gt']:intval($v['gt']);
 						$where .= ' `'.$k.'` > '.$value . $c;
 					}else if(isset($v['gte'])){
+						
 						$value = is_int($v['gte'])?$v['gte']:intval($v['gte']);
 						$where .= ' `'.$k.'` >= '.$value . $c;
 					}else if(isset($v['lt'])){
+						
 						$value = is_int($v['lt'])?$v['lt']:intval($v['lt']);
 						$where .= ' `'.$k.'` < '.$value . $c;
 					}else if(isset($v['lte'])){
+						
 						$value = is_int($v['lte'])?$v['lte']:intval($v['lte']);
 						$where .= ' `'.$k.'` <= '.$value . $c;
 					}else if(isset($v['neq'])){
 						if($v['neq']==''){
 							$value = "''";
 						}else{
+							
 							$value = is_int($v['neq'])?$v['neq']:intval($v['neq']);
 						}
 						
