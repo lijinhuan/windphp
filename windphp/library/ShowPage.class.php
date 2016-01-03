@@ -114,9 +114,9 @@ if(!defined('FRAMEWORK_PATH')) {
             if ($current>$show_num) {
             	if($this->url_write){
             		$url = Core::getWebUrl($this->url_write[0].'-'.$this->pvar.'-'.'1').$anchors;
-            		$output =' <a href="'.$url.'" title="首页" target="'.$target.'">首页</a>'."\n";
+            		$output =' <li><a href="'.$url.'" title="首页" target="'.$target.'">首页</a></li>'."\n";
             	}else{
-            		$output = ' <a href="'.$this->file.'?'.($this->varstr).$this->pvar.'=1'.$anchors.'" title="首页" target="'.$target.'">首页</a>'."\n";
+            		$output = ' <li><a href="'.$this->file.'?'.($this->varstr).$this->pvar.'=1'.$anchors.'" title="首页" target="'.$target.'">首页</a></li>'."\n";
             	}
             	
             	$this->output.=$output;
@@ -125,9 +125,9 @@ if(!defined('FRAMEWORK_PATH')) {
             	
             	if($this->url_write){
             		$url = Core::getWebUrl($this->url_write[0].'-'.$this->pvar.'-'.($current-1)).$anchors;
-            		$output='<a href="'.$url.'" title="上一页" target="'.$target.'">上一页</a>'."\n";
+            		$output='<li><a href="'.$url.'" title="上一页" target="'.$target.'">上一页</a></li>'."\n";
             	}else{
-            		$output='<a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($current-1).$anchors.'" title="上一页" target="'.$target.'">&lt;</a>'."\n";
+            		$output='<li><a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($current-1).$anchors.'" title="上一页" target="'.$target.'">&lt;</a></li>'."\n";
             	}
             	 
             	$this->output.=$output;
@@ -147,14 +147,14 @@ if(!defined('FRAMEWORK_PATH')) {
 
             for ($i=$start; $i<=$end; $i++) {
                 if ($current==$i) {
-                    $this->output.='<span class="cur">'.$i.'</span>'."\n";    //输出当前页数
+                    $this->output.='<li><span class="thisclass">'.$i.'</span></li>'."\n";    //输出当前页数
                 } else {
                 	
                 	if($this->url_write){
                 		 $url = Core::getWebUrl($this->url_write[0].'-'.$this->pvar.'-'.$i).$anchors;
-                		 $output='<a href="'.$url.'" target="'.$target.'">'.$i.'</a>'."\n";//输出页数
+                		 $output='<li><a href="'.$url.'" target="'.$target.'">'.$i.'</a></li>'."\n";//输出页数
                 	}else{
-                		 $output='<a href="'.$this->file.'?'.$this->varstr.$this->pvar.'='.$i.$anchors.'" target="'.$target.'">'.$i.'</a>'."\n";//输出页数
+                		 $output='<li><a href="'.$this->file.'?'.$this->varstr.$this->pvar.'='.$i.$anchors.'" target="'.$target.'">'.$i.'</a></li>'."\n";//输出页数
                 	}
                 	
                 	$this->output.=$output;
@@ -168,11 +168,11 @@ if(!defined('FRAMEWORK_PATH')) {
             	if($this->url_write){
             		$url1 = Core::getWebUrl($this->url_write[0].'-'.$this->pvar.'-'.($current+1)).$anchors;
             		$url2 = Core::getWebUrl($this->url_write[0].'-'.$this->pvar.'-'.($this->tpage)).$anchors;
-            		$this->output.='<a href="'.$url1.'" title="下一页" target="'.$target.'">下一页</a>'."\n";
-                	$this->output.=' <a href="'.$url2.'" title="最后一页" target="'.$target.'">尾页</a>'."\n";
+            		$this->output.='<li><a href="'.$url1.'" title="下一页" target="'.$target.'">下一页</a></li>'."\n";
+                	$this->output.=' <li><a href="'.$url2.'" title="最后一页" target="'.$target.'">尾页</a></li>'."\n";
             	}else{
-            		$this->output.='<a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($current+1).$anchors.'" title="下一页" target="'.$target.'">&gt;</a>'."\n";
-                	$this->output.=' <a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($this->tpage).$anchors.'" title="最后一页" target="'.$target.'">尾页</a>'."\n";
+            		$this->output.='<li><a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($current+1).$anchors.'" title="下一页" target="'.$target.'">&gt;</a></li>'."\n";
+                	$this->output.=' <li><a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($this->tpage).$anchors.'" title="最后一页" target="'.$target.'">尾页</a></li>'."\n";
             	} 
             }
         }
@@ -191,33 +191,34 @@ if(!defined('FRAMEWORK_PATH')) {
        * @author modify by melon @ 2008
        */
     public function setvar($omit = array()) {
-    	if (!$omit){
-    		$omit = array($this->pvar);
-    	}
-    	
+    	if (!$omit){$omit = array($this->pvar);}
     	$path_write = '';
     	$path_write_param = '';
-    	
+    	//print_r($_GET);
         foreach ($_GET as $k=>$v){
         	if (!in_array($k,$omit)){
-        		if(empty($v) and strpos($k, '_htm')!==false){
-        			$k = str_replace('_htm', '.htm', $k);
+        		if(empty($v) and (strpos($k, '_htm')!==false or strpos($k, '_html')!==false)){
+        			if(strpos($k, '_html')!==false)$k = str_replace('_html', '.html', $k);
+        			if(strpos($k, '_htm')!==false)$k = str_replace('_htm', '.htm', $k);
         			$this->varstr .= $k.'&amp;';
         			$path_write = $k;
         		}else{
         			$this->varstr .= $k.'='.urlencode($v).'&amp;';
-        			$path_write_param .= $k.'-'.urlencode($v);
+        			if(!in_array($k, array('action','do')))$path_write_param .= $k.'-'.urlencode($v).'-';
         		}
         	} 
         }
-        	
+        $path_write_param = trim($path_write_param,'-');
       
         if($path_write){
         	$path_write = explode('.', $path_write);
+        	
         	if($path_write_param){
         		$path_write[0] = $path_write[0].'-'.$path_write_param;
         	}
+        	
         	$url_rewirte_arr = explode('-', $path_write[0]);
+        	
         	
         	$colum = array();
         	$num = count($url_rewirte_arr);
@@ -227,7 +228,7 @@ if(!defined('FRAMEWORK_PATH')) {
 						unset($url_rewirte_arr[$i],$url_rewirte_arr[$i+1]);
 						continue;
 					}
-					$colum[$url_rewirte_arr[$i]] = $url_rewirte_arr[$i+1];
+					$colum[$url_rewirte_arr[$i]] = isset($url_rewirte_arr[$i+1])?$url_rewirte_arr[$i+1]:'';
 					
 					if(in_array($url_rewirte_arr[$i], $omit)){
 						unset($url_rewirte_arr[$i],$url_rewirte_arr[$i+1]);
@@ -237,7 +238,7 @@ if(!defined('FRAMEWORK_PATH')) {
 			$path_write[0] = implode('-', $url_rewirte_arr);
         	$this->url_write = $path_write; 
         }
-        
+       
 		return $this->varstr;	
 		
     }
@@ -270,10 +271,10 @@ if(!defined('FRAMEWORK_PATH')) {
     	$url = $this->file.'?'.$this->varstr;
     	$page = '';
     	if($currentPage>1){
-    		$page .= '<a href="'.$url.$this->pvar.'='.($currentPage-1).'">上一页</a>';
+    		$page .= '<li><a href="'.$url.$this->pvar.'='.($currentPage-1).'">上一页</a></li>';
     	}
     	if(!empty($dataNum) and $dataNum==$perPageNum){
-    		$page .= '<a href="'.$url.$this->pvar.'='.($currentPage+1).'">下一页</a>';
+    		$page .= '<li><a href="'.$url.$this->pvar.'='.($currentPage+1).'">下一页</a></li>';
     	}
     	
     	return $page;
