@@ -286,7 +286,11 @@ class Core {
 		!isset($_GET['action']) && $_GET['action'] = self::$action;
 		!isset($_GET['do']) && $_GET['do'] = self::$do;
 		$request_uri = $_SERVER['REQUEST_URI'];
-		preg_match("/\/.*?\?(.*?)\.(html|htm)/is",$request_uri,$match);
+		$rule = "/\/.*?\?(.*?)\.(html|htm)/is";
+		if(self::$conf['url_rewrite']){
+			$rule = "/\/(.*?)\.(html|htm)/is";
+		}
+		preg_match($rule,$request_uri,$match);
 		if(isset($match[2])){
 			$arr = explode('-', $match[1]);
 			$num = count($arr);
