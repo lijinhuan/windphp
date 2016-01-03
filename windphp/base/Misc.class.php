@@ -97,6 +97,7 @@ class Misc {
 		} else {
 			@header("Expires: ".gmdate("D, d M Y H:i:s", time()+$expire)." GMT");
 			@header("Cache-Control: max-age=".$expire);
+			@header ("Pragma: public");
 		}
 		if($charset)
 			@header("Content-type: " . $type . "; charset=" . $charset);
