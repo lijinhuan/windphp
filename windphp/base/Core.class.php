@@ -164,8 +164,13 @@ class Core {
 			echo "<font color=green><b>PowerBy: </b></font>windphp framework<br/>";
 			echo '</div></body></html>';
 		}else{
-			echo $e->getMessage();
+			if(isset(Core::$conf['web']) and Core::$conf['web']){
+				Misc::showMessage($e->getMessage(),Core::$conf['app_url']);
+			}else{
+				echo $e->getMessage();
+			}
 		}
+		
 		exit();
 	}
 	
@@ -288,14 +293,23 @@ class Core {
 		$request_uri = $_SERVER['REQUEST_URI'];
 		$rule = "/\/\??(.*?)\.(html|htm)/is";
 		preg_match($rule,$request_uri,$match);
+		
 		if(isset($match[2])){
 			$arr = explode('-', $match[1]);
+			
 			$num = count($arr);
 			if($num > 2) {
 				for($i=2; $i<$num; $i+=2) {
 					isset($arr[$i+1]) && $_GET[$arr[$i]] = $arr[$i+1];
 				}
 			}
+			if(isset($arr[0]) && !preg_match("/^\w+$/", $arr[0])){
+				Misc::showMessage("该地址不存在",Core::$conf['app_url']);
+			}
+			if(isset($arr[1]) && !preg_match("/^\w+$/", $arr[1])){
+				Misc::showMessage("该地址不存在",Core::$conf['app_url']);
+			}
+			
 			$_GET['action'] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$action;
 			$_GET['do'] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$do;
 			unset($arr,$num);

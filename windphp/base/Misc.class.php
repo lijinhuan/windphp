@@ -222,6 +222,7 @@ class Misc {
 	 * @param int $ms 跳转等待时间
 	 */
 	public static function showMessage($msg, $urlForward = 'goback', $ms = 1250, $dialog = '', $returnjs = '') {
+		header("status: 404 Not Found");
 		$str='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 				<head>
@@ -282,6 +283,7 @@ class Misc {
 	
 	
 	public static  function showMmsg($msg,$url='',$s=2000){
+		header("status: 404 Not Found");
 		$str=<<<MMSG
 			<html>
 				<head>
