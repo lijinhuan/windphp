@@ -61,11 +61,11 @@ class Core {
 		$_SERVER['time'] = time();
 		$_SERVER['sqls'] = array();
 		(!isset($_SERVER['REQUEST_URI']) || (isset($_SERVER['HTTP_X_REWRITE_URL']) && $_SERVER['REQUEST_URI'] != $_SERVER['HTTP_X_REWRITE_URL'])) && self::__requestUriFix();
-		self::__initGet();
 		// 自动 include
 		spl_autoload_register(array('Core', 'autoLoadClass'));
 		// 异常处理类
 		set_exception_handler(array('Core', 'exceptionHandle'));
+		self::__initGet();
 	}
 	
 	
