@@ -72,41 +72,40 @@ class Core {
 	/**
 	 * 设置通用魔术方法函数
 	 */
-	public static function setMagicGet($var,$conf){
-		static $control_auto_get = array();
-		if(isset($control_auto_get[$var])){
-			return $control_auto_get[$var];
-		}
-		if($var=='tpl'){
-			$tpl_name = 'Tpl'.ucfirst($conf['template_syntax']);
-			$driver_obj =  new $tpl_name($conf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$tpl_name);
-			return $driver_obj;
-		}elseif(substr($var,-3,3)=='_db'){
-			$var_arr = explode("_", $var);
-			$dbconf = $conf['db'][$var_arr[0]];
-			$driver_obj = Core::db($dbconf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$var_arr,$var,$dbconf);
-			return $driver_obj;
-		}else{
-			if($var=='file'){
+	 public static function setMagicGet($var, $conf) {
+	 	static $control_auto_get = array();
+	 	if(isset($control_auto_get[$var])) {
+	 		return $control_auto_get[$var];
+		} 
+
+		switch ($var) {
+			case 'tpl':
+				$tpl_name = 'Tpl'.ucfirst($conf['template_syntax']);
+				$driver_obj =  new $tpl_name($conf);
+				$control_auto_get[$var] = $driver_obj;
+				return $driver_obj;
+
+			case 'file':
 				return Core::cache($var,$conf);
-			}
-			$var_arr = explode("_", $var);
-			$count = count($var_arr);
-			if($count<2){
-				throw new Exception("$var error ！");
-			}	
-			if(in_array($var_arr[0], $conf['support_cache'])){
-				return Core::cache($var_arr[0],$conf,$var_arr[1]);
-			}
-			$table = substr($var,strlen($var_arr[0].'_'));
-			$driver_obj = Core::model($var_arr[0],$table,$conf);
-			$control_auto_get[$var] = $driver_obj;
-			unset($control_auto_get,$count,$var_arr,$var);
-			return $driver_obj;
+
+			default:
+				list($type, $flag) = explode('_', $var, 2);
+				if(empty($type) or empty($flag)) {
+					throw new Exception("$var error ！");
+				}
+
+				if ($flag=='db') {
+					$dbconf = $conf['db'][$type];
+					$driver_obj = Core::db($dbconf);
+					$control_auto_get[$var] = $driver_obj;
+					return $driver_obj;
+				} elseif (in_array($type, $conf['support_cache'])) {
+					return Core::cache($type,$conf,$flag);
+				} else {
+					$driver_obj = Core::model($type,$flag,$conf);
+					$control_auto_get[$var] = $driver_obj;
+					return $driver_obj;
+				}
 		}
 	}
 
