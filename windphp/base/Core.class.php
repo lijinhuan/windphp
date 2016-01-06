@@ -96,7 +96,7 @@ class Core {
 
 				if ($flag=='db') {
 					$dbconf = $conf['db'][$type];
-					$driver_obj = Core:db($dbconf);
+					$driver_obj = Core::db($dbconf);
 					$control_auto_get[$var] = $driver_obj;
 					return $driver_obj;
 				} elseif (in_array($type, $conf['support_cache'])) {
