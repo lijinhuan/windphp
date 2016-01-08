@@ -27,7 +27,7 @@ class Misc {
 			foreach ($ip_keys as $key) {
 				if (array_key_exists($key, $_SERVER) === true ) {
 					$x = explode(',', $_SERVER[$key]);
-					$tmpip = filter_var(trim(end($x)), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE);
+					$tmpip = filter_var(trim(end($x)), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
 							
 					if ($tmpip !== false) {
 						$ip = $tmpip;
