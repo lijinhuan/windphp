@@ -258,11 +258,9 @@ class DbMysqli implements DbInterface  {
 	
 	
 	private function __formatWhere($keys=array()){
-		
 		$where = '';
 		$c = ' and ';
 		foreach ($keys as $k=>$v){
-			
 			if(is_int($v) and strlen($v)<10){
 				$where .= ' `'.$k.'`='.intval($v).$c;
 			}elseif(is_array($v)){
@@ -270,7 +268,6 @@ class DbMysqli implements DbInterface  {
 					$v = '';
 					$where .= ' `'.$k.'`='."''".$c;
 				}else{
-					
 					if(isset($v['in'])){
 						$varr = array();
 						foreach ($v['in'] as  $imval){
@@ -278,25 +275,31 @@ class DbMysqli implements DbInterface  {
 						}
 						$v = "'".implode("','", $varr)."'";
 						$where .= ' `'.$k.'` in('.$v.')'.$c;
-					}else if(isset($v['like'])){
+					} 
+					if(isset($v['like'])){
 						$where .= ' `'.$k.'` like \''.addcslashes(str_replace("'", "''", $v['like']), "\000\n\r\\\032").'\'' .$c;
-					}else if(isset($v['gt'])){
+					}
+					if(isset($v['gt'])){
 					
 						$value = is_int($v['gt'])?$v['gt']:intval($v['gt']);
 						$where .= ' `'.$k.'` > '.$value . $c;
-					}else if(isset($v['gte'])){
+					} 
+					if(isset($v['gte'])){
 						
 						$value = is_int($v['gte'])?$v['gte']:intval($v['gte']);
 						$where .= ' `'.$k.'` >= '.$value . $c;
-					}else if(isset($v['lt'])){
+					}
+					if(isset($v['lt'])){
 						
 						$value = is_int($v['lt'])?$v['lt']:intval($v['lt']);
 						$where .= ' `'.$k.'` < '.$value . $c;
-					}else if(isset($v['lte'])){
+					}
+					if(isset($v['lte'])){
 						
 						$value = is_int($v['lte'])?$v['lte']:intval($v['lte']);
 						$where .= ' `'.$k.'` <= '.$value . $c;
-					}else if(isset($v['neq'])){
+					}
+					if(isset($v['neq'])){
 						if($v['neq']==''){
 							$value = "''";
 						}else{
@@ -305,7 +308,8 @@ class DbMysqli implements DbInterface  {
 						}
 						
 						$where .= ' `'.$k.'` != '.$value . $c;
-					}else{
+					}
+					if(empty($where)){
 						$where .= ' 1 ' .$c;
 					}
 				}
