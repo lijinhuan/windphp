@@ -14,8 +14,8 @@ if(!defined('FRAMEWORK_PATH')) {
 
 class Core {
 	public static $conf = array();
+	public static $controller = 'Index';
 	public static $action = 'Index';
-	public static $do = 'Index';
 	//核心类加载池
 	private static $__coreClasses = array(
 			'BaseController' => 'base/BaseController.class.php',
@@ -40,6 +40,9 @@ class Core {
 	 */
 	public static function init($conf){
 		self::$conf = $conf;
+		if(isset(self::$conf['default_controller']))self::$controller=self::$conf['default_controller'];
+		if(isset(self::$conf['default_action']))self::$action=self::$conf['default_action'];
+		
 		//时间
 		if(isset($conf['timezone']) && !empty($conf['timezone'])){
 			date_default_timezone_set($conf['timezone']);
@@ -183,6 +186,7 @@ class Core {
 		self::init($conf);
 		$control = ucfirst(htmlspecialchars($_GET['action']));
 		$do = ucfirst(htmlspecialchars($_GET['do']));
+		
 		$controller_file = APP_PATH.'controllers/'.$control."Controller.class.php";
 		if(is_file($controller_file) && include $controller_file) {
 			$control_class = $control."Controller";
@@ -287,8 +291,8 @@ class Core {
 	 * @todo 请求初始化
 	 */
 	private static function __initGet(){
-		!isset($_GET['action']) && $_GET['action'] = self::$action;
-		!isset($_GET['do']) && $_GET['do'] = self::$do;
+		!isset($_GET['action']) && $_GET['action'] = self::$controller;
+		!isset($_GET['do']) && $_GET['do'] = self::$action;
 		$request_uri = $_SERVER['REQUEST_URI'];
 		$rule = "/\/\??(.*?)\.(html|htm)/is";
 		preg_match($rule,$request_uri,$match);
@@ -309,8 +313,8 @@ class Core {
 				Misc::showMessage("该地址不存在",Core::$conf['app_url']);
 			}
 			
-			$_GET['action'] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$action;
-			$_GET['do'] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$do;
+			$_GET['action'] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$controller;
+			$_GET['do'] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$action;
 			unset($arr,$num);
 		}
 	}
