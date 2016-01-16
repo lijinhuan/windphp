@@ -197,7 +197,7 @@ class DbMysqli implements DbInterface  {
 		$limit = (isset($data['limit']) and !empty($data['limit']))?' LIMIT '.$data['limit']:'';
 		$group = (isset($data['group']) and !empty($data['group']))?' GROUP BY `'.$data['group'].'`':'';
 		$order = (isset($data['order']) and !empty($data['order']))?' ORDER BY '.$data['order']:'';
-		$having = (($group && isset($data['having'])) and !empty($data['havaing']))?' HAVING '.$data['having']:'';
+		$having = (($group && isset($data['having'])) and !empty($data['having']))?' HAVING '.$data['having']:'';
 		$select = 	(isset($data['select']) and !empty($data['select']))?$data['select']:'*';	
 		$sql = '';
 		switch (strtoupper($type)){
