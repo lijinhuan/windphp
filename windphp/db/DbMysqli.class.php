@@ -40,13 +40,25 @@ class DbMysqli implements DbInterface  {
 	
 	
 	public function connect($host,$username,$password,$database,$_charset){
-		$host  = explode(":", $host);
-		$mysqliLink = mysqli_connect($host[0], $username, $password,$database,$host[1]);
-		if ($mysqliLink->connect_error) {
-			throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
-		}
-		$this->query("SET names $_charset", $mysqliLink);
-		return $mysqliLink;
+        list($dbhost, $port)  = explode(":", $host, 2);
+        if (!isset($port)) {
+            $port = ini_get("mysqli.default_port");
+        } else {
+            $options = array(
+                'min_range' => 1,
+                'max_range' => 65535
+            );
+            if (filter_var($port, FILTER_VALIDATE_INT, $options) === FALSE) {
+                throw new Exception($this->conf['database'].' mysqli illegal port range');
+            }
+        }
+
+        $mysqliLink = mysqli_connect($dbhost, $username, $password, $database, $port);
+        if ($mysqliLink->connect_error) {
+            throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
+        }
+        mysqli_set_charset($mysqliLink, $_charset);
+        return $mysqliLink;
 	}
 	
 	
