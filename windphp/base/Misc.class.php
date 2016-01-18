@@ -72,14 +72,14 @@ class Misc {
 	}
 	
 	
-	public static function makeSalt( $passwordLength = 32, $generatedPassword='') {
-		$valid_characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*";
-		$chars_length = strlen($valid_characters) - 1;
-		for($i = $passwordLength; $i--; ) {
-			$generatedPassword .= substr($valid_characters, (mt_rand()%(strlen($valid_characters))), 1);
-		}
-		return $generatedPassword;
-	}
+    public static function makeSalt( $saltLength = 32, $generatedPassword='') {
+        $valid_characters     = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*';
+        $valid_characters_len = strlen($valid_characters) - 1 ;
+        for( $i = 0; $i < $saltLength; $i++ ) {
+            $generatedPassword .= $valid_characters[ mt_rand(0, $valid_characters_len) ];
+        }
+        return $generatedPassword;
+    }
 	
 	
 	/**
