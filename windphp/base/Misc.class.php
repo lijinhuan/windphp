@@ -207,7 +207,7 @@ class Misc {
 		} else {
 			// 把动态密匙保存在密文里，这也是为什么同样的明文，生产不同密文后能解密的原因
 			// 因为加密后的密文可能是一些特殊字符，复制过程可能会丢失，所以用base64编码
-			return $keyc.str_replace('=', '', base64_encode($result));
+            return $keyc . rtrim(base64_encode($result), '=');
 		}
 	}
 	
