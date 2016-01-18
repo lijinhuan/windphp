@@ -45,11 +45,11 @@ class Misc {
 	
 	/**
 	 * 生成随机字符串
-	 * @param string $lenth 长度
+	 * @param string $length 长度
 	 * @return string 字符串
 	 */
-	public static function createRandomstr($lenth = 6) {
-		return self::random($lenth, '123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ');
+	public static function createRandomstr($length = 6) {
+		return self::random($length, '123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ');
 	}
 	
 	
