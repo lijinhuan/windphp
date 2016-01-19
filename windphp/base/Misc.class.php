@@ -45,11 +45,11 @@ class Misc {
 	
 	/**
 	 * 生成随机字符串
-	 * @param string $lenth 长度
+	 * @param string $length 长度
 	 * @return string 字符串
 	 */
-	public static function createRandomstr($lenth = 6) {
-		return self::random($lenth, '123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ');
+	public static function createRandomstr($length = 6) {
+		return self::random($length, '123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ');
 	}
 	
 	
@@ -72,14 +72,14 @@ class Misc {
 	}
 	
 	
-	public static function makeSalt( $passwordLength = 32, $generatedPassword='') {
-		$valid_characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*";
-		$chars_length = strlen($valid_characters) - 1;
-		for($i = $passwordLength; $i--; ) {
-			$generatedPassword .= substr($valid_characters, (mt_rand()%(strlen($valid_characters))), 1);
-		}
-		return $generatedPassword;
-	}
+    public static function makeSalt( $saltLength = 32, $generatedPassword='') {
+        $valid_characters     = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*';
+        $valid_characters_len = strlen($valid_characters) - 1 ;
+        for( $i = 0; $i < $saltLength; $i++ ) {
+            $generatedPassword .= $valid_characters[ mt_rand(0, $valid_characters_len) ];
+        }
+        return $generatedPassword;
+    }
 	
 	
 	/**
@@ -207,7 +207,7 @@ class Misc {
 		} else {
 			// 把动态密匙保存在密文里，这也是为什么同样的明文，生产不同密文后能解密的原因
 			// 因为加密后的密文可能是一些特殊字符，复制过程可能会丢失，所以用base64编码
-			return $keyc.str_replace('=', '', base64_encode($result));
+            return $keyc . rtrim(base64_encode($result), '=');
 		}
 	}
 	
@@ -525,21 +525,22 @@ MMSG;
 	 * @return string
 	 */
 	public static function safeReplace($string) {
-		$string = str_replace('%20','',$string);
-		$string = str_replace('%27','',$string);
-		$string = str_replace('%2527','',$string);
-		$string = str_replace('*','',$string);
-		$string = str_replace('"','&quot;',$string);
-		$string = str_replace("'",'&#39',$string);
-		$string = str_replace("'",'',$string);
-		$string = str_replace('"','',$string);
-		$string = str_replace(';','',$string);
-		$string = str_replace('<','&lt;',$string);
-		$string = str_replace('>','&gt;',$string);
-		$string = str_replace("{",'',$string);
-		$string = str_replace('}','',$string);
-		$string = str_replace('\\','',$string);
-		return $string;
+        $trans = array(
+            '%20'   =>  '',
+            '%27'   =>  '',
+            '%2527' =>  '',
+            '*'     =>  '',
+            '"'     =>  '&quot;',
+            ","     =>  '&#39',
+            ';'     =>  '',
+            '<'     =>  '&lt;',
+            '>'     =>  '&gt;',
+            '{'     =>  '',
+            '}'     =>  '',
+            '\\'    =>  ''
+
+        );
+        return strtr($string, $trans);
 	}
 	
 	
@@ -548,15 +549,19 @@ MMSG;
 	 *  简单过滤
 	 */
 	public static function stripHtml($string,$strip=1){
-		$string = str_replace('"','&quot;',$string);
-		$string = str_replace("'",'&#39;',$string);
-		$string = str_replace("'",'',$string);
-		$string = str_replace('"','',$string);
+        $trans = array(
+            '"'     =>  '&quot;',
+            ","     =>  '&#39'
+        );
+		$string = strtr($string, $trans);
 		if($strip){
 			$string = strip_tags($string);
 		}else{
-			$string = str_replace('<','&lt;',$string);
-			$string = str_replace('>','&gt;',$string);
+            $trans = array(
+                '<'     =>  '&lt;',
+                '>'     =>  '&gt;',
+            );
+            $string = strtr($string, $trans);
 		}
 		return $string;
 	}
@@ -569,45 +574,47 @@ MMSG;
 	 * @return mixed
 	 */
 	public static function editorSafeBase($safeStr){
-		$safeStr = preg_replace('/\<img\s+data\=\"flash\"\s+src\=\".*?(?:[\.gif|\.jpg|\.png])\"\s+val\=\"(.*?(?:[\.swf|\.mp4]))\?.*?\"\s*\/\>/is', '[flash src=+\1+]', $safeStr);
-		$safeStr = str_replace('<br />', '[[br/]]', $safeStr);
-		$safeStr = str_replace('<br/>', '[[br/]]', $safeStr);
-		$safeStr = str_replace('<br>', '[[br/]]', $safeStr);
-		$safeStr = str_replace('<strong>', '[[strong]]', $safeStr);
-		$safeStr = str_replace('</strong>', '[[/strong]]', $safeStr);
-		$safeStr = str_replace('<p>', '[[p]]', $safeStr);
-		$safeStr = str_replace('</p>', '[[/p]]', $safeStr);
-		$safeStr = str_replace('<em>', '[[em]]', $safeStr);
-		$safeStr = str_replace('</em>', '[[/em]]', $safeStr);
-		$safeStr = str_replace('</u>', '[[/u]]', $safeStr);
-		$safeStr = str_replace('<u>', '[[u]]', $safeStr);
-		$safeStr = str_replace('<s>', '[[s]]', $safeStr);
-		$safeStr = str_replace('</s>', '[[/s]]', $safeStr);
-		$safeStr = str_replace('</blockquote>', '[[/blockquote]]', $safeStr);
-		$safeStr = str_replace('<blockquote>', '[[blockquote]]', $safeStr);
-		$safeStr = preg_replace('/\<span\s+style\=\"color\:\#(.*?)\"\>(.*?)\<\/span\>/is', '[span style=+color:#\1+]\2[/span]', $safeStr);
-		$safeStr = preg_replace('/\<a\s+href\=\"(.*?)\"\>(.*?)\<\/a\>/is', '[a href=+\1+]\2[/a]', $safeStr);
-		$safeStr = preg_replace('/\<img\s+data\=\"flash\"\s+src\=\".*?(?:[\.gif|\.jpg|\.png])\"\s+val\=\"(.*?(?:[\.swf|\.mp4]))\"\s*\/\>/is', '[flash src=+\1+]', $safeStr);
-		$safeStr = preg_replace('/\<img\s+src\=\"(.*?(?:[\.gif|\.jpg|\.png]))\"\s+(.*?)\/\>/is', '[img src=+\1+\2+]', $safeStr);
+        $preg_trans = array(
+            '/\<img\s+data\=\"flash\"\s+src\=\".*?(?:[\.gif|\.jpg|\.png])\"\s+val\=\"(.*?(?:[\.swf|\.mp4]))\?.*?\"\s*\/\>/is' => '[flash src=+\1+]',
+            '/\<span\s+style\=\"color\:\#(.*?)\"\>(.*?)\<\/span\>/is' => '[span style=+color:#\1+]\2[/span]',
+            '/\<a\s+href\=\"(.*?)\"\>(.*?)\<\/a\>/is' => '[a href=+\1+]\2[/a]',
+            '/\<img\s+data\=\"flash\"\s+src\=\".*?(?:[\.gif|\.jpg|\.png])\"\s+val\=\"(.*?(?:[\.swf|\.mp4]))\"\s*\/\>/is' => '[flash src=+\1+]',
+            '/\<img\s+src\=\"(.*?(?:[\.gif|\.jpg|\.png]))\"\s+(.*?)\/\>/is' => '[img src=+\1+\2+]'
+        );
+
+        $trans = array(
+            '<br />'        => '[[br/]]',
+            '<br/>'         => '[[br/]]',
+            '<br>'          => '[[br/]]',
+            '<strong>'      => '[[strong]]',
+            '</strong>'     => '[[/strong]]',
+            '<p>'           => '[[p]]',
+            '</p>'          => '[[/p]]',
+            '<em>'          => '[[em]]',
+            '</em>'         => '[[/em]]',
+            '<u>'           => '[[u]]',
+            '</u>'          => '[[/u]]',
+            '<s>'           => '[[s]]',
+            '</s>'          => '[[/s]]',
+            '<blockquote>'  => '[[blockquote]]',
+            '</blockquote>' => '[[/blockquote]]'
+        );
+
+        $safeStr = preg_replace(array_keys($preg_trans), array_values($preg_trans), $safeStr);
+        $safeStr = strtr($safeStr, $trans);
 		$safeStr = self::strip_html($safeStr);
-		$safeStr = preg_replace('/\[flash\s+src\=\+(.*?)\+\]/is', '<embed src="\1" autostart=false fullscreen=true width="480" height="360" align="bottom"></embed>', $safeStr);
-		$safeStr = preg_replace('/\[img\s+src\=\+(.*?)\+(.*?)\+\]/is', '<img src="\1" \2 />', $safeStr);
-		$safeStr = preg_replace('/\<img\s+src\=\"(.*?)\"\s*style\=\&quot\;(.*?)\&quot\;\s*\/\>/is', '<img src="\1" style="\2" />', $safeStr);
-		$safeStr = preg_replace('/\[a\s+href\=\+(.*?)\+\](.*?)\[\/a\]/is', '<a href="\1">\2</a>', $safeStr);
-		$safeStr = preg_replace('/\[span\s+style\=\+color\:\#(.*?)\+\](.*?)\[\/span\]/is', '<span style="color:#\1">\2</span>', $safeStr);
-		$safeStr = str_replace('[[br/]]', '<br/>', $safeStr);
-		$safeStr = str_replace('[[strong]]', '<strong>', $safeStr);
-		$safeStr = str_replace('[[/strong]]', '</strong>', $safeStr);
-		$safeStr = str_replace('[[em]]', '<em>', $safeStr);
-		$safeStr = str_replace('[[/em]]', '</em>', $safeStr);
-		$safeStr = str_replace('[[p]]', '<p>', $safeStr);
-		$safeStr = str_replace('[[/p]]', '</p>', $safeStr);
-		$safeStr = str_replace('[[u]]', '<u>', $safeStr);
-		$safeStr = str_replace('[[/u]]', '</u>', $safeStr);
-		$safeStr = str_replace('[[s]]', '<s>', $safeStr);
-		$safeStr = str_replace('[[/s]]', '</s>', $safeStr);
-		$safeStr = str_replace('[[blockquote]]', '<blockquote>', $safeStr);
-		$safeStr = str_replace('[[/blockquote]]', '</blockquote>', $safeStr);
+
+        $preg_trans = array(
+            '/\[flash\s+src\=\+(.*?)\+\]/is' => '<embed src="\1" autostart=false fullscreen=true width="480" height="360" align="bottom"></embed>',
+            '/\[img\s+src\=\+(.*?)\+(.*?)\+\]/is' => '<img src="\1" \2 />',
+            '/\<img\s+src\=\"(.*?)\"\s*style\=\&quot\;(.*?)\&quot\;\s*\/\>/is' => '<img src="\1" style="\2" />',
+            '/\[a\s+href\=\+(.*?)\+\](.*?)\[\/a\]/is' => '<a href="\1">\2</a>',
+            '/\[span\s+style\=\+color\:\#(.*?)\+\](.*?)\[\/span\]/is' => '<span style="color:#\1">\2</span>'
+        );
+
+        $safeStr = preg_replace(array_keys($preg_trans), array_values($preg_trans), $safeStr);
+        $safeStr = strtr($safeStr, array_flip($trans));
+
 		return $safeStr;
 	}
 	
@@ -618,15 +625,17 @@ MMSG;
 	 * @return number
 	 */
 	public static function checkEditorStrLength($str){
-		$con = strip_tags(str_replace('<br />', '',$str));
-		$con = strip_tags(str_replace('<br/>', '',$con));
-		$con = strip_tags(str_replace('<br>', '',$con));
-		$con = strip_tags(str_replace("\n", '',$con));
-		$con = strip_tags(str_replace("\t", '',$con));
-		$con = strip_tags(str_replace(' ', '',$con));
-		$con = str_replace('&nbsp;', '', $con);
-		$strLength = self::utf8_strlen($con);
-		return $strLength;
+        $trans = array(
+            '<br />'    => '',
+            '<br/>'     => '',
+            '<br>'      => '',
+            "\n"        => '',
+            "\t"        => '',
+            ' '         => '',
+            '&nbsp;'    => ''
+        );
+        $con = strip_tags(strtr($str, $trans));
+        return self::utf8_strlen($con);
 	}
 	
 	
@@ -640,11 +649,14 @@ MMSG;
 	 */
 	public static  function cutstr($string,$start,$end,$dot='...'){
 		if(self::utf8_strlen($string)>$end){
-			$string = str_replace('&ldquo;', '', $string);
-			$string = str_replace('&rdquo;', '', $string);
-			$string = str_replace('&middot;', '', $string);
-			$string = str_replace('&nbsp;', '', $string);
-			$string =  mb_substr($string, $start,$end,'utf-8').$dot;
+            $trans = array(
+                '&ldquo;'   => '',
+                '&rdquo;'   => '',
+                '&middot;'  => '',
+                '&nbsp;'    => ''
+            );
+            $string = strtr($string, $trans);
+			$string = mb_substr($string, $start,$end,'utf-8') . $dot;
 		}
 		return $string;
 	}
