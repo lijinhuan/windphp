@@ -47,11 +47,31 @@ class DbModel  {
 	
 	
 	public function fetchOne($data=array()){
+		if(!is_array($data)){
+			$re = $this->query($data);
+			$row = mysqli_fetch_assoc($re);
+			if(!$row){
+				return array();
+			}
+			return $row;
+		}
 		return $this->getDb()->fetchOne($this->table,$data);
 	}
 	
 	
-	public function fetchAll($data=array()){
+	public function fetchAll($data){
+		if(!is_array($data)){
+			$res = $this->query($data);
+			if ($res !== false){
+				$arr = array();
+				while ($row = mysqli_fetch_assoc($res)){
+					$arr[] = $row;
+				}
+				return $arr;
+			}else{
+				return array();
+			}
+		}
 		return $this->getDb()->fetchAll($this->table,$data);
 	}
 	
