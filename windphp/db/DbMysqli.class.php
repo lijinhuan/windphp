@@ -262,7 +262,7 @@ class DbMysqli implements DbInterface  {
 					}
 				}
 			}else{
-				$set .= ' `'.$k.'`='."'" . addcslashes(str_replace("'", "''", $v), "\000\n\r\\\032") . "'".$c;
+				$set .= ' `'.$k.'`='."'" . mysqli_real_escape_string($this->mysqliLink,$v) . "'".$c;
 			}
 		}
 		return rtrim($set,$c);
@@ -283,13 +283,13 @@ class DbMysqli implements DbInterface  {
 					if(isset($v['in'])){
 						$varr = array();
 						foreach ($v['in'] as  $imval){
-							$varr[] = addcslashes(str_replace("'", "''", $imval), "\000\n\r\\\032");
+							$varr[] = mysqli_real_escape_string($this->mysqliLink,$imval);
 						}
 						$v = "'".implode("','", $varr)."'";
 						$where .= ' `'.$k.'` in('.$v.')'.$c;
 					} 
 					if(isset($v['like'])){
-						$where .= ' `'.$k.'` like \''.addcslashes(str_replace("'", "''", $v['like']), "\000\n\r\\\032").'\'' .$c;
+						$where .= ' `'.$k.'` like \''.mysqli_real_escape_string($this->mysqliLink,$v['like']).'\'' .$c;
 					}
 					if(isset($v['gt'])){
 					
@@ -326,7 +326,7 @@ class DbMysqli implements DbInterface  {
 					}
 				}
 			}else{
-				$where .= ' `'.$k.'`='."'" . addcslashes(str_replace("'", "''", $v), "\000\n\r\\\032") . "'".$c;
+				$where .= ' `'.$k.'`='."'" . mysqli_real_escape_string($this->mysqliLink,$v) . "'".$c;
 			}
 		}
 		return rtrim($where,$c);
