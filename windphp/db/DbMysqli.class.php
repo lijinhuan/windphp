@@ -155,18 +155,12 @@ class DbMysqli implements DbInterface  {
 	
 	
 	public function commit(){
-		mysqli_commit($this->mysqliLink);
-		if(!function_exists('mysqli_begin_transaction')){
-			$this->autocommit(true);
-		}
+		return mysqli_commit($this->mysqliLink);
 	}
 	
 	
 	public function rollback(){
-		mysqli_rollback($this->mysqliLink);
-		if(!function_exists('mysqli_begin_transaction')){
-			$this->autocommit(true);
-		}
+		return mysqli_rollback($this->mysqliLink);
 	}
 	
 	
@@ -174,7 +168,7 @@ class DbMysqli implements DbInterface  {
 		if(function_exists('mysqli_begin_transaction')){
 			return mysqli_begin_transaction($this->mysqliLink,MYSQLI_TRANS_START_READ_WRITE);
 		}else{
-			return $this->autocommit(false);	
+			return $this->query("START TRANSACTION");	
 		}
 	}
 	
