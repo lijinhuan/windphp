@@ -155,13 +155,29 @@ class DbMysqli implements DbInterface  {
 	
 	
 	public function commit(){
-		return mysqli_commit($this->mysqliLink);
+		mysqli_commit($this->mysqliLink);
+		if(!function_exists('mysqli_begin_transaction')){
+			$this->autocommit(true);
+		}
 	}
 	
 	
 	public function rollback(){
-		return mysqli_rollback($this->mysqliLink);
+		mysqli_rollback($this->mysqliLink);
+		if(!function_exists('mysqli_begin_transaction')){
+			$this->autocommit(true);
+		}
 	}
+	
+	
+	public function beginTransaction(){
+		if(function_exists('mysqli_begin_transaction')){
+			return mysqli_begin_transaction($this->mysqliLink,MYSQLI_TRANS_START_READ_WRITE);
+		}else{
+			return $this->autocommit(false);	
+		}
+	}
+	
 	
 	
 	public function insert($table='',$data=array()){
