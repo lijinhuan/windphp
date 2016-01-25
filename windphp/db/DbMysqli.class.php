@@ -40,7 +40,7 @@ class DbMysqli implements DbInterface  {
 	
 	
 	public function connect($host,$username,$password,$database,$_charset){
-        list($dbhost, $port)  = explode(":", $host, 2);
+        @list($dbhost, $port)  = explode(":", $host, 2);
         if (!isset($port)) {
             $port = ini_get("mysqli.default_port");
         } else {

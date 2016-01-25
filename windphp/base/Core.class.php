@@ -92,7 +92,7 @@ class Core {
 				return Core::cache($var,$conf);
 
 			default:
-				list($type, $flag) = explode('_', $var, 2);
+				@list($type, $flag) = explode('_', $var, 2);
 				if(empty($type) or empty($flag)) {
 					throw new Exception("$var error ！");
 				}
