@@ -221,7 +221,7 @@ class Misc {
 	 * @param mixed(string/array) $url_forward 跳转地址
 	 * @param int $ms 跳转等待时间
 	 */
-	public static function showMessage($msg, $urlForward = 'goback', $ms = 1250, $dialog = '', $returnjs = '') {
+	public static function showMessage($msg, $urlForward = 'goback', $ms = 3000, $dialog = '', $returnjs = '') {
 		header("status: 404 Not Found");
 		$str='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				<html xmlns="http://www.w3.org/1999/xhtml">
@@ -253,6 +253,7 @@ class Misc {
 		}elseif($urlForward=="blank") {
 				
 		}elseif($urlForward) {
+			$str = $str."系统将在 <b id=\"wait\" style=\"color:blue\">".ceil($ms/1000)."</b> 秒后自动跳转&nbsp;";
 			$str = $str.'<a href="'.$urlForward.'">无法跳转？请点击这里</a>';
 			$str = $str.'<script language="javascript">setTimeout("redirect(\''.$urlForward.'\');",'.$ms.');</script> ';
 		}
@@ -273,7 +274,18 @@ class Misc {
 						}
 						function redirect(url) {
 							location.href = url;
-						}
+						}			
+					    function jump() {
+					        var wait = document.getElementById("wait"), time = 3;
+					        var interval = setInterval(function(){
+					            var time = --wait.innerHTML;
+					            --time;
+					            if(time <= 0) {
+					                clearInterval(interval);
+					            };
+					        }, 1000);
+					    }
+						jump();
 					</script>
 					</body>
 					</html>';
@@ -455,7 +467,7 @@ MMSG;
 	
 	
 	
-	public static function page($totalCount,$currentPage,$pageRows=20,$showPageNum=10,$pagevars=array('page')){
+	public static function page($totalCount,$currentPage,$pageRows=20,$showPageNum=6,$pagevars=array('page')){
 		$total_page = ceil($totalCount/$pageRows);
 		if($total_page==1){return '';}
 		$sp = new ShowPage();
