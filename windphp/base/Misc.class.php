@@ -296,6 +296,7 @@ class Misc {
 	
 	public static  function showMmsg($msg,$url='',$s=2000){
 		header("status: 404 Not Found");
+		$sc = ceil($s/1000);
 		$str=<<<MMSG
 			<html>
 				<head>
@@ -307,7 +308,7 @@ class Misc {
 				<body>
 				  <div style="text-align:center;">
 					<div style="-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-moz-box-shadow: 0 1px 1px #fff inset;-webkit-box-shadow: 0 1px 1px #fff inset;box-shadow: 0 1px 1px #fff inset;;padding:10px 30px;margin-top:10%;background:pink;border: 1px solid #333;">
-					   {$msg}
+					   {$msg} (<b id="wait" style="color:blue">{$sc}</b>)
 					</div>
 				  </div>
 				 <script language="javascript">
@@ -317,6 +318,17 @@ class Misc {
 							window.location.href = url;
 						}
 					 }
+				     function jump() {
+					        var wait = document.getElementById("wait"), time = 3;
+					        var interval = setInterval(function(){
+					            var time = --wait.innerHTML;
+					            --time;
+					            if(time <= 0) {
+					                clearInterval(interval);
+					            };
+					        }, 1000);
+					}
+				    jump();
 				 </script>
 				</body>
 			</html>
