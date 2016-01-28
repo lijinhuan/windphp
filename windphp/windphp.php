@@ -34,7 +34,7 @@ if(IS_CLI){
 	$app_url = "";
 }else{
 	$portadd = $_SERVER['SERVER_PORT'] == 80 ? '' : ':'.$_SERVER['SERVER_PORT'];
-    $path = dirname($_SERVER['PHP_SELF']);
+    $path = substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'));
     $app_url =   "http://{$_SERVER['HTTP_HOST']}{$portadd}{$path}/";
 }
 defined('APP_URL') or define("APP_URL", $app_url);
