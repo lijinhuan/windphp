@@ -14,6 +14,8 @@ if(!defined('FRAMEWORK_PATH')) {
 }
   
 class BaseController  {
+	protected $_page = 1;
+	protected $_refer = '';//来源url
 	protected $_action = null;
 	protected $_controller = null;
 	
@@ -22,11 +24,26 @@ class BaseController  {
 		$this->conf = $conf;
 		$this->_controller = $this->conf['controller'];
 		$this->_action = $this->conf['action'];
+		$this->__initSysParam();
 	}
 	
 	
 	public function __destruct(){
 		$this->debug();
+	}
+	
+	
+	/**
+	 * @todo 系统参数初始化
+	 */
+	protected function __initSysParam(){
+		$page = abs(Misc::getParam('page'));
+		$this->_page = min($page,$this->conf['maxpage']);
+		if($page<1){$this->_page = 1;}
+		$this->conf['limit_start'] = ($this->_page-1)*$this->conf['page_rows'];
+		$this->conf['limit'] = $this->conf['limit_start'].','.$this->conf['page_rows'];
+		$this->_refer = isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:$this->conf['app_url'];
+		if(strpos($this->_refer, $this->conf['app_url'])===false)$this->_refer=$this->conf['app_url'];
 	}
 	
 	
