@@ -49,6 +49,7 @@ if(!is_file($conf_file)){
 			APP_PATH.'models',
 			APP_PATH.'runtime',
 			APP_PATH.'views',
+			APP_PATH.'logs',
 			APP_PATH.'runtime/data',
 			APP_PATH.'runtime/tpl',
 			APP_PATH.'views/default',

@@ -15,9 +15,11 @@ if(!defined('FRAMEWORK_PATH')) {
 
 
 class DbMysqli implements DbInterface  {
-	
+	public $user_test_db = false;
+	public $select_db = true;
 	public $conf;
-	
+	public $show_error = true;
+	public $error_info = '';
 	
 	public function __construct($conf){
 		$this->conf = $conf;
@@ -52,11 +54,22 @@ class DbMysqli implements DbInterface  {
                 throw new Exception($this->conf['database'].' mysqli illegal port range');
             }
         }
-
-        $mysqliLink = mysqli_connect($dbhost, $username, $password, $database, $port);
-        if ($mysqliLink->connect_error) {
-            throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
+		if($this->user_test_db){
+			$mysqliLink = @mysqli_connect($dbhost, $username, $password, '', $port);
+		}else{
+			$mysqliLink = @mysqli_connect($dbhost, $username, $password, $database, $port);
+		}
+        if ((!$mysqliLink or $mysqliLink->connect_error) and $this->show_error) {
+            Logger::log($database.' mysql connect error','mysql_error');
+        	throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
+        }else{
+        	if(!$mysqliLink or $mysqliLink->connect_error){
+        		Logger::log($database.' mysql connect error','mysql_error');
+        		$this->error_info = isset($mysqliLink->connect_error)?$mysqliLink->connect_error:'mysql connect error';
+        		return false;
+        	}
         }
+        if($this->user_test_db) $this->select_db = mysqli_select_db($mysqliLink, $database);
         mysqli_set_charset($mysqliLink, $_charset);
         return $mysqliLink;
 	}
@@ -201,7 +214,7 @@ class DbMysqli implements DbInterface  {
 	}
 	
 	public function close(){
-		if(isset($this->mysqliLink)){
+		if(isset($this->mysqliLink) and $this->mysqliLink){
 			mysqli_close($this->mysqliLink);
 		}
 	}

@@ -20,6 +20,7 @@ class Core {
 	private static $__coreClasses = array(
 			'BaseController' => 'base/BaseController.class.php',
 			'DbModel' => 'base/DbModel.class.php',
+			'Extlib' => 'base/Extlib.class.php',
 			'Misc' => 'base/Misc.class.php',
 			'CacheInterface' => 'cache/CacheInterface.php',
 			'FileCache' => 'cache/FileCache.class.php',
@@ -30,6 +31,7 @@ class Core {
 			'TplInterface' => 'tpl/TplInterface.php',
 			'TplSmallTemplate' => 'tpl/TplSmallTemplate.class.php',
 			'FileDir' => 'library/FileDir.class.php',
+			'Logger' => 'library/Logger.class.php',
 			'Http' => 'library/Http.class.php',
 			'ShowPage' => 'library/ShowPage.class.php',
 	);

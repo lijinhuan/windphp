@@ -9,8 +9,14 @@ class Logger {
 		if(empty($file)){
 			$file = date('Ymd');
 		}
-		$file = APP_PATH.'logs/'.self::$file_pre.$file.'.txt';
-		$msg =  '['.self::type.']'.'['.date('Y-m-d H:i:s').'] '.$msg."\n";
+		$dir = APP_PATH.'logs/';
+		$file = $dir.self::$file_pre.$file.'.txt';
+		if(!is_dir($dir)){
+			if(!mkdir($dir,0777)){
+				return false;
+			}
+		}
+		$msg =  '['.self::$log_type.']'.'['.date('Y-m-d H:i:s').'] '.$msg."\n";
 		file_put_contents($file,$msg,FILE_APPEND);
 	} 
 	
