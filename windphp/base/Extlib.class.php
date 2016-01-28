@@ -13,7 +13,7 @@ if(!defined('FRAMEWORK_PATH')) {
 	exit('access error !');
 }
   
-class ExlibController  {
+class Extlib  {
 	
 	public function __get($var) {
 		return Core::setMagicGet($var, Core::$conf);

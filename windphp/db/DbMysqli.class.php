@@ -42,36 +42,40 @@ class DbMysqli implements DbInterface  {
 	
 	
 	public function connect($host,$username,$password,$database,$_charset){
-        @list($dbhost, $port)  = explode(":", $host, 2);
-        if (!isset($port)) {
-            $port = ini_get("mysqli.default_port");
-        } else {
-            $options = array(
-                'min_range' => 1,
-                'max_range' => 65535
-            );
-            if (filter_var($port, FILTER_VALIDATE_INT, $options) === FALSE) {
-                throw new Exception($this->conf['database'].' mysqli illegal port range');
-            }
-        }
+		@list($dbhost, $port)  = explode(":", $host, 2);
+		if (!isset($port)) {
+			$port = ini_get("mysqli.default_port");
+		} else {
+			$options = array(
+					'min_range' => 1,
+					'max_range' => 65535
+			);
+			if (filter_var($port, FILTER_VALIDATE_INT, $options) === FALSE) {
+				throw new Exception($this->conf['database'].' mysqli illegal port range');
+			}
+		}
 		if($this->user_test_db){
 			$mysqliLink = @mysqli_connect($dbhost, $username, $password, '', $port);
 		}else{
 			$mysqliLink = @mysqli_connect($dbhost, $username, $password, $database, $port);
 		}
-        if ((!$mysqliLink or $mysqliLink->connect_error) and $this->show_error) {
-            Logger::log($database.' mysql connect error','mysql_error');
-        	throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
-        }else{
-        	if(!$mysqliLink or $mysqliLink->connect_error){
-        		Logger::log($database.' mysql connect error','mysql_error');
-        		$this->error_info = isset($mysqliLink->connect_error)?$mysqliLink->connect_error:'mysql connect error';
-        		return false;
-        	}
-        }
-        if($this->user_test_db) $this->select_db = mysqli_select_db($mysqliLink, $database);
-        mysqli_set_charset($mysqliLink, $_charset);
-        return $mysqliLink;
+		if ((!$mysqliLink or $mysqliLink->connect_error) and $this->show_error) {
+			Logger::log($database.' mysql connect error','mysql_error');
+			throw new Exception($this->conf['database'].' mysqli connect error '.$mysqliLink->connect_error);
+		}else{
+			if(!$mysqliLink or $mysqliLink->connect_error){
+				Logger::log($database.' mysql connect error','mysql_error');
+				$this->error_info = isset($mysqliLink->connect_error)?$mysqliLink->connect_error:'mysql connect error';
+				return false;
+			}
+		}
+		if($this->user_test_db) $this->select_db = mysqli_select_db($mysqliLink, $database);
+		mysqli_set_charset($mysqliLink, $_charset);
+		return $mysqliLink;
+	}
+	
+	public function switchDb($database){
+		return mysqli_select_db($this->mysqliLink, $database);
 	}
 	
 	

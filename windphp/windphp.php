@@ -37,7 +37,7 @@ if(IS_CLI){
     $path = dirname($_SERVER['PHP_SELF']);
     $app_url =   "http://{$_SERVER['HTTP_HOST']}{$portadd}{$path}/";
 }
-
+defined('APP_URL') or define("APP_URL", $app_url);
 
 //安装检测
 $conf_file =  APP_PATH.'config/conf.inc.php';
