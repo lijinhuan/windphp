@@ -2,11 +2,11 @@
 
 
 ###一、启动
-	1、访问 index.php
+	1、下载windphp放到web目录，访问 index.php即可
 	
 	2、url说明：
-		（1）http://shop.tongpai.tv/?index-index-name-lijinhuan.html
-		（2）http://shop.tongpai.tv/?action=index&do=index&name=lijinhuan
+		（1）http://www.test.com/?index-index-name-lijinhuan.html
+		（2）http://www.test.com/?action=index&do=index&name=lijinhuan
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
  		控制器对应的文件是/controllers/IndexController.class.php
  		
