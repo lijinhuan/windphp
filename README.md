@@ -10,6 +10,8 @@
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
  		
 	3、index.php DEBUG 生产环境请改为0，开发环境为1或者2
+	
+	4、项目案例，可参考此代码进行开发，该案例缺少缓存使用，可以看后面文档说明：https://github.com/lijinhuan/backend
 
 	
 ###二、控制器
