@@ -8,6 +8,7 @@
 		（1）http://shop.tongpai.tv/?index-index-name-lijinhuan.html
 		（2）http://shop.tongpai.tv/?action=index&do=index&name=lijinhuan
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
+ 		控制器对应的文件是/controllers/IndexController.class.php
  		
 	3、index.php DEBUG 生产环境请改为0，开发环境为1或者2
 	
@@ -16,9 +17,11 @@
 
 	
 ###二、控制器
-	1、在controllers下，如 IndexController.class.php 表示Index控制器
+	1、在controllers下，如 IndexController.class.php 表示Index控制器。
+	  同理，TestController.class.php 表示Test控制器。
 
-	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
+	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法。
+	   同理，actionTest 表示Test方法。
 ```php
  	<?php
 		class IndexController extends BaseController {
@@ -31,15 +34,27 @@
         
         
 ###三、模型
+	1、在控制器和模型中我们可以这样子调用模型：
+	   $this->bbs_thread->fetchOne(array('where'=>array('tid'=>1)));
+	   表示获取tid为1的数据
 
-	   1、在models下，如 BbsThreadModel.class.php 表示bbs数据库服务器的thread模型，
-	      可以在控制器中$this->bbs_thread->fetchAll()这样子调用。当然也可以不需要
-	      在models目录下建立BbsThreadModel.class.php模型类，系统会自动默认操作bbs对应数据库中的thread表。
-	   
-	   2、在控制器中调用模型，$this->bbs_thread->fetchOne(array('where'=>array('tid'=>1))); 表示获取tid为1的帖子
-	   
-	   3、模型前缀，主要用于区分操作哪一个数据库实例，在confing/conf.inc.php文件里面的db绑定，
-	      如'db' => array('bbs' => array(...))，同时建立模型时前缀bbs就是这里来的，如BbsThreadModel.class.php
+	2、$this->bbs_thread->fetchOne()，‘bbs_thread’ 说明，bbs表示bbs这台数据库实例，
+	   它需要对应配置文件里面的配置。如下
+	    'db' => array(
+			'bbs' => array(
+				'type' => 'mysqli',
+ 				'host'	=> 'localhost:3306',
+ 				'username'	=> 'root',
+ 				'password'	=> '123456',
+ 				'database'	=> 'bbs',
+ 				'_charset'	=> 'utf8',
+			)
+            ),
+            那么bbs就取自这里的'bbs' => array() 定义
+            ‘bbs_thread’ 里面的thread，当models目录下没有对应的BbsThreadModel.class.php文件时，
+            thread就表示bbs数据库里面的一张表。如果有BbsThreadModel.class.php文件时，它就表示
+            这里的Thread，命名的一种规则。至于操作哪张表由文件里面的$this->table 表示
+
 ```php
 	   <?php
 		   if(!defined('FRAMEWORK_PATH')) {exit('access error !');}
@@ -103,13 +118,75 @@
 	表示获取fid为1的帖子数量，返回一个数字
 
 #####5、其他说明
-	（1）fetchOne，fetchAll 除了支持数组形式输入之外，还支持sql操作，如 $this->bbs_thread->fetchAll("select * from thread")
+	（1）fetchOne，fetchAll 除了支持数组形式输入之外，还支持sql操作，
+	     如 $this->bbs_thread->fetchAll("select * from thread")
 
 	（2）$this->bbs_thread->query($sql) 执行查询操作
 	  
 	  
 ###五、缓存操作
-
+	（1）confing/conf.inc.php 配置
+		'memd'=> array(
+        			'user' => array(
+        					'servers'=>array(
+        							'host'=>'127.0.0.1',
+        							'port'=>11211,
+        							'height'=>75,
+        							'auth' => array(
+        									//'user' => 'test',
+        									//'password'=>'test',
+        							),
+        					)
+        			),
+        	 		'other' => array(
+        	 				'servers'=>array(
+        	 						'host'=>'127.0.0.1',
+        	 						'port'=>11213,
+        	 						'height'=>75,
+        	 						'auth' => array(
+        	 								//'user' => 'test',
+        	 								//'password'=>'test',
+        	 						),
+        	 				)
+        	 		),
+        	 ),	
+        	 'redis' => array(
+        	 		'user' => array(
+        	 				'servers'=>array(
+        	 						'host'=>'127.0.0.1',
+        	 						'port'=>6379,
+        	 						'timeout'=>5,
+        	 						'auth' => array(
+        	 								//'user' => 'test',
+        	 								//'password'=>'test',
+        	 						),
+        	 				)
+        	 		),
+        	 		'other' => array(
+        	 				'servers'=>array(
+        	 						'host'=>'127.0.0.1',
+        	 						'port'=>6381,
+        	 						'timeout'=>5,
+        	 						'auth' => array(
+        	 								//'user' => 'test',
+        	 								//'password'=>'test',
+        	 						),
+        	 				)
+        	 		),
+        	 ),
+        	 
+	（2）在控制或者模型中使用缓存实例
+		$this->memcache_user->get('name'); 获取key为name的缓存。‘memcache_user’，
+		memcache表示使用memcache缓存，user表示使用user这个memcache实例，同理，使用redis
+		$this->redis_user->get('name');而使用文件缓存，直接$this->file->get('name')即可
+	
+	（3）缓存操作
+		1、添加缓存数据，$this->memcache_user->set('name','lijinhuan',3600);
+		2、获取缓存数据，$this->memcache_user->get('name');
+		3、更新缓存数据，$this->memcache_user->update('name','lijinhuan',3600);
+		4、删除缓存数据，$this->memcache_user->delete('name');
+		5、其实redis支持更多的数据操作，具体可以看RedisCache.class.php源码
+		
 	  
 ###五、视图操作
 
