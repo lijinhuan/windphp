@@ -1,3 +1,6 @@
+```php
+ 	 echo $a;
+ 	 ```
 #框架说明文档：
 
 
@@ -17,9 +20,6 @@
 
 	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
 	
- 	 ```php
- 	 echo $a;
- 	 ```
  	<?php
 		class IndexController extends BaseController {
 			public function actionIndex(){
@@ -27,7 +27,7 @@
 			}
 		}
 	?>
-        ```
+       
         
         
 ###三、模型
