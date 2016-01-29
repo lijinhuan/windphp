@@ -1,6 +1,3 @@
-```php
- 	 echo $a;
- 	 ```
 #框架说明文档：
 
 
@@ -13,13 +10,14 @@
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
  		
 	3、index.php DEBUG 生产环境请改为0，开发环境为1或者2
-	
+	<br/>
+
 	
 ###二、控制器
 	1、在controllers下，如 IndexController.class.php 表示Index控制器
 
 	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
-	
+```php
  	<?php
 		class IndexController extends BaseController {
 			public function actionIndex(){
@@ -27,7 +25,7 @@
 			}
 		}
 	?>
-       
+```
         
         
 ###三、模型
