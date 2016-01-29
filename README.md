@@ -17,7 +17,7 @@
 
 	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
 	
- 	 ```Bash
+ 	 ```java
  	<?php
 		class IndexController extends BaseController {
 			public function actionIndex(){
