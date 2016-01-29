@@ -32,11 +32,14 @@
         
 ###三、模型
 
-	   1、在models下，如 BbsThreadModel.class.php 表示bbs数据库服务器的thread模型，可以在控制器中$this->bbs_thread->fetchAll()这样子调用。当然也可以不需要在models目录下建立BbsThreadModel.class.php模型类，系统会自动默认操作bbs对应数据库中的thread表。
+	   1、在models下，如 BbsThreadModel.class.php 表示bbs数据库服务器的thread模型，
+	      可以在控制器中$this->bbs_thread->fetchAll()这样子调用。当然也可以不需要
+	      在models目录下建立BbsThreadModel.class.php模型类，系统会自动默认操作bbs对应数据库中的thread表。
 	   
 	   2、在控制器中调用模型，$this->bbs_thread->fetchOne(array('where'=>array('tid'=>1))); 表示获取tid为1的帖子
 	   
-	   3、模型前缀，主要用于区分操作哪一个数据库实例，在confing/conf.inc.php文件里面的db绑定，如'db' => array('bbs' => array(...))，同时建立模型时前缀bbs就是这里来的，如BbsThreadModel.class.php
+	   3、模型前缀，主要用于区分操作哪一个数据库实例，在confing/conf.inc.php文件里面的db绑定，
+	      如'db' => array('bbs' => array(...))，同时建立模型时前缀bbs就是这里来的，如BbsThreadModel.class.php
 ```php
 	   <?php
 		   if(!defined('FRAMEWORK_PATH')) {exit('access error !');}
