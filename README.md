@@ -40,6 +40,7 @@
 
 	2、$this->bbs_thread->fetchOne()，‘bbs_thread’ 说明，bbs表示bbs这台数据库实例，
 	   它需要对应配置文件里面的配置。如下
+```php
 	    'db' => array(
 			'bbs' => array(
 				'type' => 'mysqli',
@@ -50,6 +51,7 @@
  				'_charset'	=> 'utf8',
 			)
             ),
+```
 	  那么bbs就取自这里的'bbs' => array() 定义
 	  ‘bbs_thread’ 里面的thread，当models目录下没有对应的BbsThreadModel.class.php文件时，
 	  thread就表示bbs数据库里面的一张表。如果有BbsThreadModel.class.php文件时，它就表示
@@ -70,13 +72,15 @@
 	   
 ###四、数据库操作
 #####1、查询：
-	（1）普通查询， 在模型中 
+	（1）普通查询， 在模型中
+```php
                 $this->bbs_thread->fetchAll(array(
 				'where' => array('fid'=>2),
 				'select' => 'id',
 				'order' => 'sort desc',
 				'limit' => '1,30',
 		 ));
+```
 		 $this->bbs_thread->fetchOne(array('tid'=>2));
 		 说明：fetchOne表示只获取一条，fetchAll表示获取所有结果集
 		 
@@ -88,27 +92,36 @@
 	（4）like 条件查询，'where' => array('name'=>array('like'=>'a%')) 查询a开头的板块
        
 #####2、删除：
+```php
 	$this->bbs_thread->delete(array('where' => array('fid'=>2),'limit'=>1)); 
+```
 		
 #####3、修改：
 	（1）普通更新
+```php
 		$this->bbs_thread->update(array(
 				'where' => array('fid'=>2),
 				'set' => array('name'=>'fourm2')
 		 ));
+```
+
 	（2）统计更新
+```php
 		$this->bbs_thread->update(array(
 				'where' => array('fid'=>2),
 				'set' => array('num'=>array('count'=>'+5'),'updatetime'=>12346,'dig'=>array('count'=>'-1'))
 		 ));
+```
 		前缀+表示增加，-表示减去
 		 
 #####4、增加：
 	（1）添加主要使用insert
+```php
 		$this->bbs_thread->insert(array(
 				'set' => array('name'=>'fourm2')
 		 ));
-		 
+```
+
 	（2）replace 同上$this->bbs_thread->replace()
 
 #####5、统计：
@@ -126,6 +139,7 @@
 	  
 ###五、缓存操作
 	（1）confing/conf.inc.php 配置
+```php
 		'memd'=> array(
         			'user' => array(
         					'servers'=>array(
@@ -174,7 +188,8 @@
         	 				)
         	 		),
         	 ),
-        	 
+```
+
 	（2）在控制或者模型中使用缓存实例
 		$this->memcache_user->get('name'); 获取key为name的缓存。‘memcache_user’，
 		memcache表示使用memcache缓存，user表示使用user这个memcache实例，同理，使用redis
@@ -189,21 +204,75 @@
 		
 	  
 ###五、视图操作
-
-	 1、在Index控制器的Index的方法中 $this->tpl->show() ; 表示加载views下的default主题（在conf.inc.php中配置）下的Index目录的tpl.Index.php的文件
-	 2、数据渲染：$this->tpl->assign('a',$a);表示把$a表示渲染到模板中，在模板中可以{$a}这样子调用
-	 3、支持原生模式
-		如 include $this->tpl->getFile();则直接加载文件到控制器，在文件中可以 <?php echo $a;?>这样子使用，不需要做$this->tpl->assign('a',$a);渲染
+	1、在Index控制器的Index的方法中添加代码 $this->tpl->show() ; 
+	   表示加载views下的default主题（在conf.inc.php中配置）下的Index目录的tpl.Index.php的文件
+	   
+	2、把控制器获取到的数据传到模板中使用，如 $this->tpl->assign('a',$a);
+	   表示把$a表示渲染到模板中，在模板中可以{$a}这样子调用
+	 
+	3、支持原生模式，include $this->tpl->getFile();
+	   则表示直接加载文件到控制器，在文件中可以 <?php echo $a;?>这样子使用，
+	   而不需要做$this->tpl->assign('a',$a);渲染。
+	
+	4、模板语法：在模板文件中，如tpl.Index.php，如果我们是通过 $this->tpl->show() ;这种方式进渲染的，
+	   那么使用控制器传过来的变量，就需要使用到模板语法进行调用了。
+	   （1）默认使用{}大括号来进行标明是模板语句，如{$a}表示输出$a变量。这个符号可以在
+	        confing/conf.inc.php文件中进行配置，添加'tpl_tag' => array('left'=>"\<\!\-\-\{",'right'=>"\}\-\-\>"),
+	        则表示使用<!--{}-->来标明模板语句，<!--{$a}--> 表示输出$a变量，推荐使用这种方式，避免与javascript的冲突
+	      
+	   （2）遍历数组
+	   	<!--{loop $user $k $v}-->
+	   		<li>第<!--{$k}-->个用户，名字叫<!--{$v['name']}--></li>
+	   	<!--{/loop}-->
+	   	
+	   (3)判断语句
+	   	<!--{if $a==1}-->
+	   	    我等于1
+	   	<!--{elseif $a==2}-->
+	   	    我等于2
+	   	<!--{else}-->
+	   	    我什么都不是
+	   	<!--{if}-->
+		
+	  （4）加载模板文件
+	  	<!--{template 'Header','Common'}-->
+	  	表示加载 /views/default/Common/tpl.Header.php 文件
+	  	
+	  （5）执行php代码
+	  	<!--{php echo $a;}-->
+	  	
+	  （6）执行一个函数
+	  	<!--{func phpinfo()}-->
+	  	
+	  （7）输出一个函数的返回值
+	  	<!--{funcecho date('Y-m-d')}-->
+	  	
+	  （8）循环
+	  	<!--{for $i=0;$i<10;$i++}-->
+	  		<!--{$i}-->
+		<!--{/for}-->
+	
+	  （9）读取配置文件中的参数
+	  	<!--{$system_conf['app_url']}-->
 		
 		
 ###六、配置文件调用
-
-	在控制或者模型中可以使用$this->conf['autokey'] 这样子调用参数
+	1、在控制或者模型中可以使用$this->conf['autokey'] 这样子调用参数
 	
 
-###七、自定义类与系统帮助类
-
-	...
+###七、扩展类
+	1、自己写的或者第三方的扩展类，需要放在extlib目录下，命名格式为My.class.php,My是扩展类的类名称 
+	   最好继承 Extlib 类 如
+```php
+	class My extends Extlib  {
+		
+		public function test(){
+			echo $this->conf['app_url'];
+		}
+		
+	}
+```
+	
 		
 
 		 
