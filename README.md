@@ -67,7 +67,8 @@
 		 
 	（2）in 条件查询，'where' => array('fid'=>array('in'=>array(3,4))) 查找fid为3，4的板块
 	
-	（3）<  条件查询，'where' => array('fid'=>array('lte'=>3)) 查找fid小于等于3的板块，其中lte表示小于等于，gte大于等于，lt小于，gt大于，neq不等于
+	（3）<  条件查询，'where' => array('fid'=>array('lte'=>3))
+	     查找fid小于等于3的板块，其中lte表示小于等于，gte大于等于，lt小于，gt大于，neq不等于
 	
 	（4）like 条件查询，'where' => array('name'=>array('like'=>'a%')) 查询a开头的板块
        
