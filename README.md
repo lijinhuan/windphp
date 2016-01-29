@@ -50,10 +50,10 @@
  				'_charset'	=> 'utf8',
 			)
             ),
-            那么bbs就取自这里的'bbs' => array() 定义
-            ‘bbs_thread’ 里面的thread，当models目录下没有对应的BbsThreadModel.class.php文件时，
-            thread就表示bbs数据库里面的一张表。如果有BbsThreadModel.class.php文件时，它就表示
-            这里的Thread，命名的一种规则。至于操作哪张表由文件里面的$this->table 表示
+	  那么bbs就取自这里的'bbs' => array() 定义
+	  ‘bbs_thread’ 里面的thread，当models目录下没有对应的BbsThreadModel.class.php文件时，
+	  thread就表示bbs数据库里面的一张表。如果有BbsThreadModel.class.php文件时，它就表示
+	  这里的Thread，命名的一种规则。至于操作哪张表由文件里面的$this->table 表示
 
 ```php
 	   <?php
