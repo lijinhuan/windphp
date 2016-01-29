@@ -11,17 +11,17 @@
 		
 		
 ###二、控制器
+	1、在controllers下，如 IndexController.class.php 表示Index控制器
 
-       1、在controllers下，如 IndexController.class.php 表示Index控制器
-       2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
-	   
-	    <?php
-			class IndexController extends BaseController {
-				public function actionIndex(){
-					echo '<h2>windphp framework hello world！</h2>';
-				}
+	2、IndexController.class.php 定义方法 actionIndex() 表示Index方法
+ 	 ```php
+ 	<?php
+		class IndexController extends BaseController {
+			public function actionIndex(){
+				echo '<h2>windphp framework hello world！</h2>';
 			}
-		?>
+		}
+	?>
 	   
 ###三、模型
 
