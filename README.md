@@ -1,10 +1,12 @@
 #框架说明文档：<br/>
 ###一、启动
 	1、访问 index.php
+	
 	2、url说明：
 		（1）http://shop.tongpai.tv/?index-index-name-lijinhuan.html
 		（2）http://shop.tongpai.tv/?action=index&do=index&name=lijinhuan
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
+ 		
 	3、index.php DEBUG 生产环境请改为0，开发环境为1或者2
 		
 		
