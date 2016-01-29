@@ -71,6 +71,8 @@ if(!is_file($conf_file)){
 			'template_theme' => 'default',
 			'data_default_cache_time' => 900,
 			'cache_type' => 'file',
+			'maxpage' => 500,
+			'page_rows' => 20,
 			'app_url' => '{$app_url}',
 			'support_cache' => array('memcache','redis','file'),
 			'db' => array(
