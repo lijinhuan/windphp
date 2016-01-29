@@ -89,7 +89,7 @@
 		前缀+表示增加，-表示减去
 		 
 #####4、增加：
-	（1）添加主要使用inset
+	（1）添加主要使用insert
 		$this->bbs_thread->insert(array(
 				'set' => array('name'=>'fourm2')
 		 ));
