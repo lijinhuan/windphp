@@ -98,7 +98,7 @@ class Core {
 				if(empty($type) or empty($flag)) {
 					throw new Exception("$var error ！");
 				}
-
+				
 				if ($flag=='db') {
 					$dbconf = $conf['db'][$type];
 					$driver_obj = Core::db($dbconf);
@@ -280,7 +280,7 @@ class Core {
 	
 	
 	public static function getWebUrl($key){
-		if(self::$conf['url_rewrite']){
+		if(isset(self::$conf['url_rewrite']) and self::$conf['url_rewrite']){
 			return self::$conf['app_url'].''.$key.'.html';
 		}else{
 			return self::$conf['app_url'].'?'.$key.'.html';

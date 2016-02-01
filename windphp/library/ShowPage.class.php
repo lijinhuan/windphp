@@ -9,7 +9,8 @@ if(!defined('FRAMEWORK_PATH')) {
  */
  
  class ShowPage {
-
+	public $show_go = true;
+ 	
  	private $url_write = array();
  	
     /**
@@ -175,6 +176,17 @@ if(!defined('FRAMEWORK_PATH')) {
                 	$this->output.=' <li><a href="'.$this->file.'?'.($this->varstr).$this->pvar.'='.($this->tpage).$anchors.'" title="最后一页" target="'.$target.'">尾页</a></li>'."\n";
             	} 
             }
+            
+            if($this->show_go){
+            	$rand = rand();
+            	$this->inputPageNum = '<li><input id="pageNumInput'.$rand.'" 
+            			                  onKeypress="var osO;try{osO=window.event.keyCode}catch(e){osO=event.which;}if(osO==13){if(this.value<='.($this->tpage).'){document'.($target!='_self'?".$target":'').'.location = \''.$this->file.'?'.($this->varstr).''.$this->pvar.'='.'\'+this.value+\''.$anchors.'\';}else{ alert(\'数值太大!\');}};if (osO < 45 || osO > 57) try{event.returnValue = false;}catch(e){}" 
+            			                  		type="text" value="" size="1" maxlength="5" type="text" />'."\n".
+            	                        '<a href="javascript://" onclick="var objectPageNumIpt = document.getElementById(\'pageNumInput'.$rand.'\');if(objectPageNumIpt.value<='.($this->tpage).'){document'.($target!='_self'?".$target":'').'.location = \''.$this->file.'?'.($this->varstr).''.$this->pvar.'='.'\'+objectPageNumIpt.value+\''.$anchors.'\';}else{ alert(\'数值太大!\');}">跳</a>		
+            	                        </li>';
+            	$this->output = $this->output.$this->inputPageNum;
+            }
+            
         }
 		return $this->output;
 		

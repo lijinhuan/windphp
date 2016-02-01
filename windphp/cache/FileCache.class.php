@@ -16,7 +16,7 @@ if(!defined('FRAMEWORK_PATH')) {
 
 class FileCache implements CacheInterface  {
 	
-	private $conf;
+	public  $conf = array();
 	
 	
 	public function __construct($conf){
