@@ -16,9 +16,11 @@ if(!defined('FRAMEWORK_PATH')) {
 
 class MemcacheCache implements CacheInterface  {
 	private $__memCache;
+	public  $conf = array();
 	
 	
 	public function __construct($conf){
+		$this->conf = $conf;
 		if(isset($conf['cache_flag'])){
 			$configServerArray =  $conf['memd'][$conf['cache_flag']]['servers'];
 			$this->__memCache = $this->connect($configServerArray);

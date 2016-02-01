@@ -16,9 +16,11 @@ if(!defined('FRAMEWORK_PATH')) {
 
 class RedisCache implements CacheInterface  {
 	private  $__redis = '';
-	
+	public  $conf = array();
+
 	
 	public function __construct($conf){
+		$this->conf = $conf;
 		if(isset($conf['cache_flag'])){
 			$server = $conf['redis'][$conf['cache_flag']]['servers'];
 		}else{
