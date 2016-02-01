@@ -23,19 +23,33 @@ class Misc {
 		static $ip = null;
 		if (! $ip) {
 			$ip_keys = array('HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'HTTP_CLIENT_IP', 'HTTP_X_CLUSTER_CLIENT_IP', 'REMOTE_ADDR');
-	
-			foreach ($ip_keys as $key) {
-				if (array_key_exists($key, $_SERVER) === true ) {
-					$x = explode(',', $_SERVER[$key]);
-					$tmpip = filter_var(trim(end($x)), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
-							
-					if ($tmpip !== false) {
-						$ip = $tmpip;
-						break;
+			if(!function_exists('filter_var')){
+				if (isset ( $_SERVER ['HTTP_X_FORWARDED_FOR'] ) && $_SERVER ['HTTP_X_FORWARDED_FOR'] && $_SERVER ['REMOTE_ADDR']) {
+					if (strstr ( $_SERVER ['HTTP_X_FORWARDED_FOR'], ',' )) {
+						$x = explode ( ',', $_SERVER ['HTTP_X_FORWARDED_FOR'] );
+						$_SERVER ['HTTP_X_FORWARDED_FOR'] = trim ( end ( $x ) );
+					}
+					if (preg_match ( '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/', $_SERVER ['HTTP_X_FORWARDED_FOR'] )) {
+						$ip = $_SERVER ['HTTP_X_FORWARDED_FOR'];
+					}
+				} elseif (isset ( $_SERVER ['HTTP_CLIENT_IP'] ) && $_SERVER ['HTTP_CLIENT_IP'] && preg_match ( '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/', $_SERVER ['HTTP_CLIENT_IP'] )) {
+					$ip = $_SERVER ['HTTP_CLIENT_IP'];
+				}
+				if (! $ip && preg_match ( '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/', $_SERVER ['REMOTE_ADDR'] )) {
+					$ip = $_SERVER ['REMOTE_ADDR'];
+				}
+			}else{
+				foreach ($ip_keys as $key) {
+					if (array_key_exists($key, $_SERVER) === true ) {
+						$x = explode(',', $_SERVER[$key]);
+						$tmpip = filter_var(trim(end($x)), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);		
+						if ($tmpip !== false) {
+							$ip = $tmpip;
+							break;
+						}
 					}
 				}
 			}
-	
 			$ip or $ip = 'Unknown';
 		}
 		return $ip;

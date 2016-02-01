@@ -50,7 +50,7 @@ class DbMysqli implements DbInterface  {
 					'min_range' => 1,
 					'max_range' => 65535
 			);
-			if (filter_var($port, FILTER_VALIDATE_INT, $options) === FALSE) {
+			if (function_exists('filter_var') and filter_var($port, FILTER_VALIDATE_INT, $options) === FALSE) {
 				throw new Exception($this->conf['database'].' mysqli illegal port range');
 			}
 		}
