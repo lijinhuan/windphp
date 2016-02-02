@@ -33,9 +33,13 @@ defined('APP_PATH') or define("APP_PATH", dirname($_SERVER['SCRIPT_FILENAME']).'
 if(IS_CLI){
 	$app_url = "";
 }else{
+	$http_str =  "http://";
+	if(isset($_SERVER['HTTPS']) and $_SERVER['HTTPS']){
+		$http_str =  "https://";
+	}
 	$portadd = $_SERVER['SERVER_PORT'] == 80 ? '' : ':'.$_SERVER['SERVER_PORT'];
     $path = substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'));
-    $app_url =   "http://{$_SERVER['HTTP_HOST']}{$portadd}{$path}/";
+    $app_url =   $http_str."{$_SERVER['HTTP_HOST']}{$portadd}{$path}/";
 }
 defined('APP_URL') or define("APP_URL", $app_url);
 
