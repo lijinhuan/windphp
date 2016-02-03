@@ -123,17 +123,17 @@ class Core {
 			$extlib_file = APP_PATH.'extlib/'.$className.'.class.php';
 			if(strpos($className, "Controller")!==false){
 				$controller_file = APP_PATH.'controllers/'.str_replace("Controller", "", $className).'Controller.class.php';
-				if(!is_file($controller_file)){
+				if(!is_string($controller_file) or  !is_file($controller_file)){
 					throw new Exception("$controller_file 文件不存在！");
 				}
 				include_once($controller_file);
 			}else if(strpos($className, "Model")!==false){
 				$model_file = APP_PATH.'models/'.$className.'.class.php';
-				if(!is_file($model_file)){
+				if(!is_string($model_file) or !is_file($model_file)){
 					throw new Exception("$model_file 文件不存在！");
 				}
 				include_once($model_file);
-			}else if(is_file($extlib_file)){
+			}else if(is_string($extlib_file) && is_file($extlib_file)){
 				include_once($extlib_file);
 			}else{
 				throw new Exception("$className 类不存在！");
@@ -190,7 +190,7 @@ class Core {
 		$do = ucfirst(htmlspecialchars($_GET['do']));
 		
 		$controller_file = APP_PATH.'controllers/'.$control."Controller.class.php";
-		if(is_file($controller_file) && include $controller_file) {
+		if(is_string($controller_file) && is_file($controller_file) && include $controller_file) {
 			$control_class = $control."Controller";
 			$onaction = "action".$do;
 			$conf['action'] = $do;
@@ -224,7 +224,7 @@ class Core {
 		if(isset($db_obj_arr[$static_key])) {
 			return $db_obj_arr[$static_key];
 		}
-		if(is_file($file)){
+		if(is_string($file) && is_file($file)){
 			include_once $file;
 			$class = $dbTag.$modelName.'Model';
 			

@@ -149,6 +149,8 @@ if(DEBUG > 0) {
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'base/BaseController.class.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'base/DbModel.class.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'base/Misc.class.php');
+		$content .= php_strip_whitespace(FRAMEWORK_PATH.'base/Extlib.class.php');
+		
 		
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'cache/CacheInterface.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'cache/FileCache.class.php');
@@ -161,6 +163,7 @@ if(DEBUG > 0) {
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'library/FileDir.class.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'library/Http.class.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'library/ShowPage.class.php');
+		$content .= php_strip_whitespace(FRAMEWORK_PATH.'library/Logger.class.php');
 		
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'tpl/TplInterface.php');
 		$content .= php_strip_whitespace(FRAMEWORK_PATH.'tpl/TplSmallTemplate.class.php');
