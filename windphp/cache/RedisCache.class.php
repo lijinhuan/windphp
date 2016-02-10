@@ -157,6 +157,10 @@ class RedisCache implements CacheInterface  {
 	}
 	
 	
+	public function hLen($cacheKey){
+		return $this->__redis->hlen($cacheKey);
+	}
+	
 }
 
 ?>
