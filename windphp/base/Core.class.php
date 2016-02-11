@@ -229,7 +229,8 @@ class Core {
 			$class = $dbTag.$modelName.'Model';
 			
 			$model = new $class($conf);
-			$model->dbTag = $dbTag;
+			if(!$model->dbTag){$model->dbTag = $dbTag;}
+			if(!$model->table){$model->table = $table_name;}
 			$db_obj_arr[$static_key] = $model;
 			
 			return $model;

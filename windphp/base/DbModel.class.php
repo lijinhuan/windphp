@@ -14,6 +14,7 @@ if(!defined('FRAMEWORK_PATH')) {
 }
   
 class DbModel  {
+	public  $table;
 	public  $dbTag;
 	public  $conf;
 	public  $noCache = false;
