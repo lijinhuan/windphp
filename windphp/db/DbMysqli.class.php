@@ -241,20 +241,20 @@ class DbMysqli implements DbInterface  {
 		$sql = '';
 		switch (strtoupper($type)){
 			case 'SELECT':
-				$sql = "SELECT $select FROM $table $where $group  $having $order $limit";
+				$sql = "SELECT $select FROM `$table` $where $group  $having $order $limit";
 				break;
 			case 'UPDATE':
 				if(empty($set)){throw new Exception("update set error table:$table ！");} 
-				$sql = "UPDATE $table  SET   $set $where  $limit";
+				$sql = "UPDATE `$table`  SET   $set $where  $limit";
 				break;
 			case 'DELETE':
-				$sql = "DELETE FROM $table $where $limit";
+				$sql = "DELETE FROM `$table` $where $limit";
 				break;
 			case 'INSERT':
-				$sql = "INSERT INTO $table SET $set";
+				$sql = "INSERT INTO `$table` SET $set";
 				break;
 			case 'REPLACE':
-				$sql = "REPLACE INTO $table SET $set";
+				$sql = "REPLACE INTO `$table` SET $set";
 				break;
 		}
 		if(empty($sql)){
