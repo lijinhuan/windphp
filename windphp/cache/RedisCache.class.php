@@ -59,11 +59,8 @@ class RedisCache implements CacheInterface  {
 	
 	public function get($key){
 		$result =  $this->__redis->get($key);
-		$json_str = str_replace('\\', '', $result);
-		$out_arr = array();
-		preg_match('/\{.*\}/', $json_str, $out_arr);
-		if (!empty($out_arr)) {
-			$data = json_decode($out_arr[0], TRUE);
+		if(strpos($result, '"redis_tag":"windphp_redis_arr"')!==false){
+			$data = json_decode($result, TRUE);
 			if(isset($data['redis_tag']) and $data['redis_tag']=='windphp_redis_arr'){
 				return $data['data'];
 			}
