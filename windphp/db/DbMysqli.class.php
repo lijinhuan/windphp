@@ -227,6 +227,7 @@ class DbMysqli implements DbInterface  {
 		$this->close();
 	}
 	
+	
 	private function __formatSql($table,$data,$type='SELECT'){
 		if(empty($table)){
 			throw new Exception("sql table empty ！");
@@ -236,12 +237,13 @@ class DbMysqli implements DbInterface  {
 		$limit = (isset($data['limit']) and !empty($data['limit']))?' LIMIT '.$data['limit']:'';
 		$group = (isset($data['group']) and !empty($data['group']))?' GROUP BY `'.$data['group'].'`':'';
 		$order = (isset($data['order']) and !empty($data['order']))?' ORDER BY '.$data['order']:'';
+		$force_index = (isset($data['force_index']) and !empty($data['force_index']))?' FORCE INDEX ('.$data['force_index'].')  ':'';
 		$having = (($group && isset($data['having'])) and !empty($data['having']))?' HAVING '.$data['having']:'';
 		$select = 	(isset($data['select']) and !empty($data['select']))?$data['select']:'*';	
 		$sql = '';
 		switch (strtoupper($type)){
 			case 'SELECT':
-				$sql = "SELECT $select FROM `$table` $where $group  $having $order $limit";
+				$sql = "SELECT $select FROM `$table` $force_index $where $group  $having $order $limit";
 				break;
 			case 'UPDATE':
 				if(empty($set)){throw new Exception("update set error table:$table ！");} 
@@ -348,12 +350,18 @@ class DbMysqli implements DbInterface  {
 						
 						$where .= ' `'.$k.'` != '.$value . $c;
 					}
+					
 					if(empty($where)){
 						$where .= ' 1 ' .$c;
 					}
 				}
 			}else{
-				$where .= ' `'.$k.'`='."'" . mysqli_real_escape_string($this->mysqliLink,$v) . "'".$c;
+				if($k=='sql_where_sepcial'){
+					$where .= $v. " ".$c;
+				}else{
+					$where .= ' `'.$k.'`='."'" . mysqli_real_escape_string($this->mysqliLink,$v) . "'".$c;
+				}
+				
 			}
 		}
 		return rtrim($where,$c);
