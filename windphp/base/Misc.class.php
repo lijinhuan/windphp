@@ -451,10 +451,11 @@ MMSG;
 		return $result;
 	}
 	
-	 public static function exitJson($arr,$callback=''){
+	
+	public static function exitJson($arr,$callback='',$type=0){
 	 	if(is_string($arr))exit($arr);
-	 	if($callback)exit($callback.'('.json_encode($arr).')');
-	 	else exit(json_encode($arr));
+	 	if($callback)exit($callback.'('.json_encode($arr,$type).')');
+	 	else exit(json_encode($arr,$type));
 	 }
 	 
 	 

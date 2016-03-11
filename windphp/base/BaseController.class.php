@@ -38,7 +38,7 @@ class BaseController  {
 	 */
 	protected function __initSysParam(){
 		$page_var = isset($this->conf['page_var'])?$this->conf['page_var']:'page';
-		$page = abs(Misc::getParam($page_var));
+		$page = abs(Misc::inputClean($page_var));
 		$this->_page = min($page,$this->conf['maxpage']);
 		if($page<1){$this->_page = 1;}
 		$this->conf['limit_start'] = ($this->_page-1)*$this->conf['page_rows'];
