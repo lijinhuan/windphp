@@ -689,7 +689,7 @@ MMSG;
 	 * @return string
 	 */
 	public static  function cutstr($string,$start,$end,$dot='...'){
-		if(self::utf8_strlen($string)>$end){
+		if(self::utf8Strlen($string)>$end){
             $trans = array(
                 '&ldquo;'   => '',
                 '&rdquo;'   => '',
