@@ -45,6 +45,7 @@ class BaseController  {
 		$this->conf['limit'] = $this->conf['limit_start'].','.$this->conf['page_rows'];
 		$this->_refer = isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:$this->conf['app_url'];
 		if(strpos($this->_refer, $this->conf['app_url'])===false)$this->_refer=$this->conf['app_url'];
+		$this->conf['refer'] = $this->_refer;
 	}
 	
 	
