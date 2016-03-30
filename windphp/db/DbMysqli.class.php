@@ -87,7 +87,10 @@ class DbMysqli implements DbInterface  {
 		}
 		$result = mysqli_query($link,$sql);
 		if($store_sql){
-			$_SERVER['sqls'][] = stripslashes($sql).'  (<font color="red">'.(microtime(true)-$start_time).' 秒</font>)';
+			$_SERVER['sqls'][] = $sqllog = stripslashes($sql).'  (<font color="red">'.(microtime(true)-$start_time).' 秒</font>)';
+			if(defined('LOGSQL') && LOGSQL){
+				Logger::log($sqllog,'sql-'.date('Y-m-d'));
+			}
 		}
 		if(!$result) {
 			throw new Exception("Error:". mysqli_error($link). "   (<font color=blue>".$sql."</font>)");
