@@ -151,7 +151,11 @@ class Core {
 	 */
 	public static function exceptionHandle($e,$status=-1) {
 		if(isset($_GET['ajax']) or (isset(self::$conf['restapi'])) and (DEBUG<1 or (DEBUG==1 and !TRACE))){
-			exit(json_encode(array('status'=>$status,'msg'=>$e->getMessage())));
+			$msg = "msg: ".$e->getMessage()." ";
+			$msg .= "file: ".$e->getFile()." ";
+			$msg .= "line: ".$e->getLine()." ";
+			$msg .= "code: ".$e->getCode()." ";
+			exit(json_encode(array('status'=>$status,'msg'=>$msg)));
 		}
 		if(DEBUG>0){
 			echo "<html><head><title>错误提示</title></head><body>";
