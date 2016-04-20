@@ -301,7 +301,11 @@ class Core {
 		!isset($_GET['action']) && $_GET['action'] = self::$controller;
 		!isset($_GET['do']) && $_GET['do'] = self::$action;
 		$request_uri = $_SERVER['REQUEST_URI'];
-		$rule = "/\/\??(.*?)\.(html|htm)/is";
+		if(isset(self::$conf['url_rewrite']) and self::$conf['url_rewrite']){
+             $rule = "/\/\??(.*?)\.(html|htm)/is";
+        }else{
+             $rule = "/\/\?(.*?)\.(html|htm)/is";
+        }
 		preg_match($rule,$request_uri,$match);
 		
 		if(isset($match[2])){
