@@ -17,7 +17,7 @@ define('MAGIC_QUOTES_GPC', function_exists('get_magic_quotes_gpc') && get_magic_
 if (isset($_GET['GLOBALS']) || isset($_POST['GLOBALS']) || isset($_COOKIE['GLOBALS']) || isset($_FILES['GLOBALS']))exit('globals error! you can not use $_GET[\'GLOBALS\'],$_POST[\'GLOBALS\']...');
 
 // 调试模式: 0:关闭; 2调试模式，线上关闭
-defined('DEBUG') or define('DEBUG', 1);
+defined('DEBUG') or define('DEBUG', 0);
 
 defined('TRACE') or define('TRACE', 0);
 
