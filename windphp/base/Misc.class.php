@@ -135,7 +135,7 @@ class Misc {
 	 * @param bool $http_only
 	 * @return void
 	 */
-	public static function setCookie($var, $value = '', $autoKey,$life = 0, $prefix = true,$path='',$domain='', $httpOnly = false){
+	public static function setCookie($var, $value = '', $autoKey,$life = 0, $prefix = true,$path='',$domain='', $httpOnly = false,$secure=0){
 		$var = ($prefix ? self::$pre : '').$var;
 		if($value == '' || $life < 0){
 			$value = '';
@@ -145,8 +145,9 @@ class Misc {
 		if(empty($path)){
 			$path = $httpOnly && PHP_VERSION < '5.2.0' ? '/; HttpOnly' : '/';
 		}
+		if($secure)$secure = $_SERVER['SERVER_PORT'] == 443 ? 1 : 0;
 		
-		$secure = $_SERVER['SERVER_PORT'] == 443 ? 1 : 0;
+	
 		if(PHP_VERSION < '5.2.0'){
 			setcookie($var,self::sysAuth($value,'ENCODE',$autoKey), $life, $path, $domain, $secure);
 		}else{
