@@ -150,12 +150,10 @@ class Core {
 	 * @todo 错误处理
 	 */
 	public static function exceptionHandle($e,$status=-1) {
+		$log = "msg:{$e->getMessage()}-file:{$e->getFile()}-line:{$e->getLine()}-code:{$e->getCode()}";
+		Logger::log($log,'systemError');
 		if(isset($_GET['ajax']) or (isset(self::$conf['restapi'])) and (DEBUG<1 or (DEBUG==1 and !TRACE))){
-			$msg = "msg: ".$e->getMessage()." ";
-			$msg .= "file: ".$e->getFile()." ";
-			$msg .= "line: ".$e->getLine()." ";
-			$msg .= "code: ".$e->getCode()." ";
-			exit(json_encode(array('status'=>$status,'msg'=>$msg)));
+			exit(json_encode(array('status'=>$status,'msg'=>$e->getMessage())));
 		}
 		if(DEBUG>0){
 			echo "<html><head><title>错误提示</title></head><body>";
@@ -301,11 +299,7 @@ class Core {
 		!isset($_GET['action']) && $_GET['action'] = self::$controller;
 		!isset($_GET['do']) && $_GET['do'] = self::$action;
 		$request_uri = $_SERVER['REQUEST_URI'];
-		if(isset(self::$conf['url_rewrite']) and self::$conf['url_rewrite']){
-             $rule = "/\/\??(.*?)\.(html|htm)/is";
-        }else{
-             $rule = "/\/\?(.*?)\.(html|htm)/is";
-        }
+		$rule = "/\/\??(.*?)\.(html|htm)/is";
 		preg_match($rule,$request_uri,$match);
 		
 		if(isset($match[2])){

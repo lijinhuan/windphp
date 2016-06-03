@@ -321,13 +321,82 @@ class Misc {
 				    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 				    <meta name="viewport" content="width=device-width, initial-scale=1">
 					<title>消息提示</title>
+					<style>
+						body {
+						    font-family: 'seanfont', "microsoft yahei";
+						    font-size: 14px;
+						    line-height: 22px;
+						    color: #333;
+						}
+						.layermbox {
+						    position: relative;
+						    z-index: 19891014;
+						}
+						.laymshade {
+						    background-color: rgba(0,0,0, .5);
+						    pointer-events: auto;
+						}
+						.laymshade, .layermmain {
+						    position: fixed;
+						    left: 0;
+						    top: 0;
+						    width: 100%;
+						    height: 100%;
+						}
+						.layermmain {
+						    display: table;
+						    font-family: Helvetica, arial, sans-serif;
+						    pointer-events: none;
+						}
+						.layermmain .section {
+						    display: table-cell;
+						    
+						    text-align: center;
+						}
+						.layermbox0 .layermchild {
+						    max-width: 90%;
+						    min-width: 150px;
+						    margin-top:130px;
+						}
+						.layermcont {
+						    padding: 20px 15px;
+						    line-height: 22px;
+						    text-align: center;
+						}
+						.layermchild {
+						    position: relative;
+						    display: inline-block;
+						    text-align: left;
+						    background-color: #fff;
+						    font-size: 14px;
+						    border-radius: 3px;
+						    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+						    pointer-events: auto;
+						}
+					</style>
 				</head>
 				<body>
+				
+				<div id="layermbox0" class="layermbox layermbox0" index="0">
+					<div class="laymshade"></div>
+					<div class="layermmain">
+						<div class="section">
+							<div class="layermchild  layermanim">
+								<div class="layermcont">{$msg} (<span id="wait" style="color:gray"> {$sc} </span>)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				<!--
 				  <div style="text-align:center;">
 					<div style="-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-moz-box-shadow: 0 1px 1px #fff inset;-webkit-box-shadow: 0 1px 1px #fff inset;box-shadow: 0 1px 1px #fff inset;;padding:10px 30px;margin-top:10%;background:pink;border: 1px solid #333;">
-					   {$msg} (<b id="wait" style="color:blue">{$sc}</b>)
+					   {$msg} (<span id="wait" style="color:gray"> {$sc} </span>)
 					</div>
 				  </div>
+				-->  
+				  
+				  
 				 <script language="javascript">
 				     setTimeout("redirect('{$url}');",$s);
 				 	 function redirect(url){
