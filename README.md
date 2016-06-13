@@ -9,10 +9,8 @@
 		（2）http://www.test.com/?action=index&do=index&name=lijinhuan
  		上面的请求是一样的，表示请求Index控制器下的Index方法，并且带上参数name
  		控制器对应的文件是/controllers/IndexController.class.php
- 		
-	3、index.php DEBUG 生产环境请改为0，开发环境为1或者2
 	
-	4、项目案例：https://github.com/lijinhuan/backend，可参考此代码进行开发，该案例暂缺少缓存使用，
+	3、项目案例：https://github.com/lijinhuan/backend，可参考此代码进行开发，该案例暂缺少缓存使用，
 	   可以看本文后面文档说明如何使用缓存。
 
 	
