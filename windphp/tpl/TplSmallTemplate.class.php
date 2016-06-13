@@ -37,7 +37,7 @@ class TplSmallTemplate implements TplInterface {
 	}
 	
 	
-	public function  show($fileName='',$dirName=''){
+	public function  show($fileName='',$dirName='',$exit=true){
 		extract($this->vars,1);
 		if(empty($fileName))$fileName=$this->conf['action'];
 		if(empty($dirName))$dirName=$this->conf['controller'];
@@ -54,7 +54,10 @@ class TplSmallTemplate implements TplInterface {
 			echo $content;
 			ob_end_flush();
 		}
-		exit();
+		if($exit){
+			exit();
+		}
+		
 	}
 	
 	

@@ -201,10 +201,10 @@ class Core {
 			if(method_exists($newcontrol, $onaction)) {
 				$newcontrol->$onaction();
 			} else {
-				exit("$do 方法不存在！");
+				throw new Exception("$do 方法不存在！");
 			}
 		}else{
-			exit("{$control} 控制器 不存在！");
+			throw new Exception("{$control} 控制器 不存在！");
 		}
 		unset($control,$controller_file);
 	}

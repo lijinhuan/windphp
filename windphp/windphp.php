@@ -10,16 +10,6 @@
  *
  */
 
-//自动转义函数处理
-define('MAGIC_QUOTES_GPC', function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc());if(phpversion() < '5.3.0' || MAGIC_QUOTES_GPC){set_magic_quotes_runtime(0);}
-
-//全局函数禁用
-if (isset($_GET['GLOBALS']) || isset($_POST['GLOBALS']) || isset($_COOKIE['GLOBALS']) || isset($_FILES['GLOBALS']))exit('globals error! you can not use $_GET[\'GLOBALS\'],$_POST[\'GLOBALS\']...');
-
-// 调试模式: 0:关闭; 2调试模式，线上关闭
-defined('DEBUG') or define('DEBUG', 0);
-
-defined('TRACE') or define('TRACE', 0);
 
 //命令行
 defined('IS_CLI') or define('IS_CLI', 0);
@@ -66,9 +56,33 @@ if(!is_file($conf_file)){
 			}
 		}
 	}
+	
+	$hostname = gethostname();
+	$conf_produce_file =  APP_PATH.'config/conf.produce.php';
+	$conf_online_file =  APP_PATH.'config/conf.online.php';
+	
 	$conf_str=<<<conf
 <?php
-        return array(
+		//生产环境与测试环境区分
+		\$servers_hostname = array(
+				'produce' => array('{$hostname}'),
+				'online' => array(''),
+		);
+		\$conf = array();
+		\$environment = '';
+		foreach (\$servers_hostname as \$key=>\$val){
+			if(in_array(gethostname(),\$val)){
+				\$environment = \$key;
+				\$conf_file = dirname(\$_SERVER['SCRIPT_FILENAME']).'/config/conf.'.\$key.'.php';
+				if(!file_exists(\$conf_file))exit(\$conf_file.' does not exists!');
+				\$conf = require \$conf_file;
+			}
+		}
+		empty(\$conf) and exit('produce or online ip does not exists,require config file error !'); 
+
+
+        \$common_conf =    array(
+      
 			'autokey' => '{$uuid}',//不能删除应用唯一识别id	
 			'timezone' => 'Asia/Shanghai',
 			'template_syntax' => 'smallTemplate',
@@ -77,8 +91,25 @@ if(!is_file($conf_file)){
 			'cache_type' => 'file',
 			'maxpage' => 500,
 			'page_rows' => 20,
-			'app_url' => '{$app_url}',
 			'support_cache' => array('memcache','redis','file'),
+			
+		);
+		return array_merge(\$common_conf,\$conf);	
+?>
+conf;
+	file_put_contents($conf_file,$conf_str);
+
+$produce_conf_str=<<<produce
+	<?php
+		//测试环境配置
+		return array(
+			//定义系统常量,会自动定义为大写常量
+			'define' => array(
+					'debug' => '1',
+					'trace' => '0',
+					'logsql' => '1',
+			),
+			'app_url' => '{$app_url}',
 			'db' => array(
         	 		'restaurant' => array(
         	 				'type' => 'mysqli',
@@ -115,10 +146,30 @@ if(!is_file($conf_file)){
         	 				)
         	 		),
         	 ),
-		);	
-?>
-conf;
-	file_put_contents($conf_file,$conf_str);
+		);
+	?>
+produce;
+	file_put_contents($conf_produce_file,$produce_conf_str);
+
+$online_conf_str=<<<online
+	<?php
+		//测试环境配置
+		return array(
+			'define' => array(
+				'debug' => '0',
+				'trace' => '0',
+				'logsql' => '0',
+			),
+			'app_url' => '',
+			'db' => array(
+				
+			),
+		);
+	?>
+online;
+	file_put_contents($conf_online_file,$online_conf_str);
+
+
 	$index_contrl_str=<<<trol
 <?php
 /**
@@ -137,7 +188,31 @@ trol;
 	file_put_contents(APP_PATH.'controllers/IndexController.class.php',$index_contrl_str);
 }
 
+
+$conf = include $conf_file;
+
+//初始化常量
+if(isset($conf['define'])){
+	foreach($conf['define'] as $k=>$v) {
+		$k = strtoupper($k);
+		defined($k) or define($k, $v);
+	}
+}
+
+
+//自动转义函数处理
+define('MAGIC_QUOTES_GPC', function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc());if(phpversion() < '5.3.0' || MAGIC_QUOTES_GPC){set_magic_quotes_runtime(0);}
+
+//全局函数禁用
+if (isset($_GET['GLOBALS']) || isset($_POST['GLOBALS']) || isset($_COOKIE['GLOBALS']) || isset($_FILES['GLOBALS']))exit('globals error! you can not use $_GET[\'GLOBALS\'],$_POST[\'GLOBALS\']...');
+
+// 调试模式: 0:关闭; 2调试模式，线上关闭
+defined('DEBUG') or define('DEBUG', 0);
+
+defined('TRACE') or define('TRACE', 0);
+
 $runtime_file = FRAMEWORK_PATH.'_wind_runtime.php';
+
 if(DEBUG > 0) {
 	if(is_file($runtime_file))unlink($runtime_file);
 	include FRAMEWORK_PATH.'base/Core.class.php';
@@ -173,7 +248,7 @@ if(DEBUG > 0) {
 	}
 	include $runtime_file;
 }
-$conf = include $conf_file;
+
 
 //头输出
 if(IS_CLI){
