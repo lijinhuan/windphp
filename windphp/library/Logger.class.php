@@ -17,7 +17,8 @@ class Logger {
 			}
 		}
 		$msg =  '['.self::$log_type.']'.'['.date('Y-m-d H:i:s').'] '.$msg."\n";
-		file_put_contents($file,$msg,FILE_APPEND);
+		@file_put_contents($file,$msg,FILE_APPEND);
+		@chmod($file, FILE_PUT_CONTENTS_ATOMIC_MODE);
 	} 
 	
 	
