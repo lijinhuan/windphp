@@ -73,7 +73,7 @@ if(!is_file($conf_file)){
 		foreach (\$servers_hostname as \$key=>\$val){
 			if(in_array(gethostname(),\$val)){
 				\$environment = \$key;
-				\$conf_file = dirname(\$_SERVER['SCRIPT_FILENAME']).'/config/conf.'.\$key.'.php';
+				\$conf_file = APP_PATH.'/config/conf.'.\$key.'.php';
 				if(!file_exists(\$conf_file))exit(\$conf_file.' does not exists!');
 				\$conf = require \$conf_file;
 			}
