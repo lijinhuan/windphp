@@ -77,6 +77,22 @@ class DbModel  {
 	}
 	
 	
+	public function insertArray($filed,$values){
+		$count_filed = count($filed);
+		$insert_values = "";
+		foreach ($values as $val) {
+			if(count($val)!=$count_filed){
+				return false;
+			}
+			$val_str = implode("','", $val);	
+			$insert_values .= "('$val_str'),";
+		}
+		$insert_values = rtrim($insert_values,',').';';
+		$sql = "insert into ".$this->table." (".implode(',', $filed).") values $insert_values";
+		return $this->query($sql);
+	}
+	
+	
 	public function update($data=array()){
 		return $this->getDb()->update($this->table,$data);
 	}
