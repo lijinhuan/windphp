@@ -1,0 +1,15 @@
+[2016-09-06 14:27:38] 112.94.171.53 /windphpdemo/?id=2	SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.00033116340637207 秒</font>)
+[2016-09-06 18:32:30] ::1 /testwindphp/demo/test/?id=2
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.0039999485015869 秒</font>)
+[2016-09-06 18:37:06] ::1 /testwindphp/demo/test/?id=2
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-06 18:38:05] ::1 /testwindphp/demo/test/webroot/?id=2
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-06 18:39:03] ::1 /testwindphp/demo/test/webroot/?id=2
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-06 18:42:15]  
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-09-06 18:43:43]  
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-09-06 18:43:44]  
+SQL: SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1  (<font color="red">0.0010008811950684 秒</font>)
