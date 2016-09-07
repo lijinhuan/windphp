@@ -1,1 +1,0 @@
-<?php return $str='{"cache_time":1473060946,"expire":900,"data":{"id":"2","name":null,"uid":"2","style":"0","is_guarantee":"0","is_seven_refund":"0","addtime":"1456988409","status":"1","lng":"","lat":"","address":"","province":"34","city":"532","district":"0","tel":"18620784001","score":"0","weixin_no_id":"2","pay_bank_id":"2","collect_num":"0","alipay_no_id":"0"}}'; ?>
