@@ -69,20 +69,20 @@
 	
 	2、查看demo的swoole
 	
-	3、如果创建的是http服务，执行：/usr/local/php cli.php  Http
+	3、如果创建的是http服务，执行：/usr/local/php swoole.php  Http
 	   默认使用的端口是9501，可以在配置文件里面修改，然后访问http://www.test.com:9501/?controller=index&action=index&name=lijinhuan，
 	   表示访问SwooleHttpIndexController控制器，Index方法，参数name值为lijinhuan，
 	   控制器对应的文件是/controllers/SwooleHttpIndexController.php，注意控制器继承的是SwooleController控制器，
 	   具体可以参考demo/test/controllers/SwooleHttpIndexController.php
 	
-	4、如果创建的是websocket服务，执行：/usr/local/php cli.php  WebSocket
+	4、如果创建的是websocket服务，执行：/usr/local/php swoole.php  WebSocket
 	   默认使用的端口是9502，可以在配置文件里面修改，然后使用html5的websocket测试请求连接http://www.test.com:9502，
 	   默认表示访问SwooleWebSocketIndexController控制器，Index方法，WebSocket请求参数和其他不一一样，建立连接后，
 	   使用json格式,发送{"controller","test"},表示访问test控制器
 	   控制器对应的文件是/controllers/SwooleWebSocketIndexController.php，注意控制器继承的是SwooleController控制器，
 	   具体可以参考demo/test/controllers/SwooleWebSocketIndexController.php
 	   
-	5、如果创建的是tcp服务，执行：/usr/local/php cli.php  Tcp
+	5、如果创建的是tcp服务，执行：/usr/local/php swoole.php  Tcp
 	   默认使用的端口是9503，可以在配置文件里面修改，然后使用telnet  测试连接服务器 9502端口，
 	   默认表示访问SwooleTcpIndexController控制器，Index方法，tpc请求参数和其他不一致，使用json格式,发送{"controller","test"},表示访问test控制器
 	   控制器对应的文件是/controllers/SwooleTcpIndexController.php，注意控制器继承的是SwooleController控制器，
