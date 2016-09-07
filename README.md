@@ -135,7 +135,7 @@ namespace Daos;
 
 
 use Windphp\Dao\IDao;
-class ShopDao extends IDao {
+class UserDao extends IDao {
 		
 	
 	public function init(){
