@@ -13,6 +13,7 @@ use Windphp\Core\BuildApp;
 use Windphp\Core\Config;
 use Windphp\Core\UrlRoute;
 use Windphp\Web\Request;
+use Windphp\Dao\IDao;
 
 
 class Windphp {
@@ -329,6 +330,24 @@ class Windphp {
 			}
 			throw new \Exception($msg);
 		}
+	}
+	
+	
+	/**
+	 * 不需要定义文件去获取dao
+	 * @param string $table
+	 * @param string $databases
+	 */
+	public static  function getIDao($table,$databases) {
+		static $daos = array();
+		$key = $table.$databases;
+		if(!isset($daos[$key])){
+			$daos[$key] = new IDao();
+		}
+		$dao = $daos[$key];
+		$dao->database = $databases;
+		$dao->table = $table;
+		return $dao;
 	}
 	
 	
