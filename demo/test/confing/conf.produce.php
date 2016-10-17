@@ -24,8 +24,8 @@
 						'type' => 'mysqli',
 						'host' => 'localhost:3306',
 						'username' => 'root',
-						'password' => '',
-						'database' => 'test',
+						'password' => '123456',
+						'database' => 'lee',
 						'_charset' => 'utf8mb4'
 				   ),
         	 ),

@@ -424,7 +424,7 @@ class Windphp {
             require $class_path;
             return;
 		}else{
-			$class_path = self::$rootPath.$baseClasspath;
+			$class_path = self::$rootPath.lcfirst($baseClasspath);
 			if(is_file($class_path)) {
 				self::$classPath[$class] = $class_path;
 				require $class_path;
