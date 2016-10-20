@@ -75,6 +75,15 @@ class Windphp {
 	public static $create_mode = 'web';
 	
 	
+	public function getRootPath() {
+		return self::$rootPath;
+	}
+	
+	
+	public function setRootPath($path) {
+		self::$rootPath = $path;
+	}
+	
 	public static function getConfigPath() {
 		return self::$rootPath.self::$appDirs['confing_dir'].DS;
 	}
@@ -132,6 +141,7 @@ class Windphp {
 	private static function  init($rootPath) {
 		PHP_VERSION < '5.3' && exit('php version error ,  must > 5.3.0 ！');
 		$_SERVER['time'] = time();
+		define('WINDPHP', 2.0);
 		defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 		self::$windphpFrameworkPath = dirname(__DIR__).DS;
 		self::$rootPath = $rootPath;

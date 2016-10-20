@@ -13,10 +13,13 @@ namespace Windphp\Core;
 
 
 use Windphp\Misc\Utils;
+use Windphp\Windphp;
 class UrlRoute {
 	
 	private static $controller = 'Index';
 	private static $action = 'Index';
+	private static $controller_name = 'controller';
+	private static $action_name = 'action';
 	
 	
 	/**
@@ -24,8 +27,8 @@ class UrlRoute {
 	 */
 	public static function initGet(){
 		(!isset($_SERVER['REQUEST_URI']) || (isset($_SERVER['HTTP_X_REWRITE_URL']) && $_SERVER['REQUEST_URI'] != $_SERVER['HTTP_X_REWRITE_URL'])) && self::__requestUriFix();
-		!isset($_GET['controller']) && $_GET['controller'] = self::$controller;
-		!isset($_GET['action']) && $_GET['action'] = self::$action;
+		!isset($_GET[self::$controller_name]) && $_GET[self::$controller_name] = self::$controller;
+		!isset($_GET[self::$action_name]) && $_GET[self::$action_name] = self::$action;
 		$request_uri = $_SERVER['REQUEST_URI'];
 		$rule = "/\/\??(.*?)\.(html|htm)/is";
 		preg_match($rule,$request_uri,$match);
@@ -47,8 +50,8 @@ class UrlRoute {
 			if(isset($arr[1]) && !preg_match("/^\w+$/", $arr[1])){
 				throw new \Exception("access error !");
 			}
-			$_GET['controller'] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$controller;
-			$_GET['action'] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$action;
+			$_GET[self::$controller_name] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$controller;
+			$_GET[self::$action_name] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$action;
 			unset($arr,$num);
 		}
 	}
@@ -75,6 +78,21 @@ class UrlRoute {
 			}
 		}
 	}
+	
+	
+	/**
+	 * @todo 伪静态配置
+	 * @param  $key
+	 * @return string
+	 */
+	public static function getWebUrl($key){
+		if(Config::getSystem('url_rewrite',false)){
+			return Windphp::$appUrl.''.$key.'.html';
+		}else{
+			return Windphp::$appUrl.'?'.$key.'.html';
+		}
+	}
+	
 		
     
 }

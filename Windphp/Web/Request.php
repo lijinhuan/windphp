@@ -10,6 +10,7 @@
 
 namespace Windphp\Web;
 use Windphp\Misc\Utils;
+use Windphp\Windphp;
 
 class Request {
 	
@@ -59,7 +60,7 @@ class Request {
 		if($paramType=='int') {return isset($var[$k])?intval($var[$k]):0;}
 		if($paramType=='string') {
 			if(isset($var[$k])) {
-				return $htmlspecialchars?$htmlspecialchars($var[$k]):$var[$k];
+				return $htmlspecialchars?htmlspecialchars($var[$k]):$var[$k];
 			}else{
 				return '';
 			}
@@ -165,7 +166,23 @@ class Request {
 	}
 	
 	
-	
+	/**
+	 * @todo 获取来源地址
+	 * @param boolean $default 为空时是否使用本站url
+	 * @param boolean $out_repalce 是否把非本站的地址替换为本站url 
+	 * @return string
+	 */
+	public static  function getRefer($default=true,$out_repalce=true) {
+		$default_refer = '';
+		if($default) {
+			$default_refer = Windphp::$appUrl;
+		}
+		$refer =  isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:$default_refer;
+		if($out_repalce) {
+			if(strpos($refer, Windphp::$appUrl)===false)$refer=Windphp::$appUrl;
+		}
+		return $refer;
+	}
 	
 	
 }

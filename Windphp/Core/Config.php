@@ -44,9 +44,13 @@ class Config {
 	}
 	
 
-	public static function getSystem($key) {
+	public static function getSystem($key,$throw=true) {
 		if(isset(self::$systemConfig[$key]))return self::$systemConfig[$key];
-		throw new \Exception("{$key} key config empty");
+		if($throw){
+			throw new \Exception("{$key} key config empty");
+		}else {
+			return '';
+		}
 	}
 	
 	
