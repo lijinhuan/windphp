@@ -1,0 +1,276 @@
+[2016-10-20 17:50:06] 127.0.0.1 /?install-run-t-1476957003.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 17:50:14] 127.0.0.1 /?install-run-t-1476957011.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 17:53:16] 127.0.0.1 /?install-run-t-1476957011.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 17:56:00] 127.0.0.1 /?install-run-t-1476957357.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 17:56:30] 127.0.0.1 /?install-run-t-1476957387.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 17:56:36] 127.0.0.1 /?install-run-t-1476957393.html
+ERR: [msg] : Install 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\InstallController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 301; [code] : 0
+[2016-10-20 18:14:47] 127.0.0.1 /?install-run-t-1476957393.html
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Common\tpl.Header.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 68; [code] : 0
+[2016-10-24 15:00:17] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-24 15:00:21] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-24 15:00:26] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-24 15:00:30] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-24 15:01:27] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-24 16:19:17] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-25 18:25:01] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : Manager 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-25 18:49:33] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : E:\wamp\www\windphp\demo\admin\confing\conf..php does not exists! ; [file] : E:\wamp\www\windphp\Windphp\Core\Config.php; [line] : 66; [code] : 0
+[2016-10-25 18:59:01] 127.0.0.1 /?Install-Manager.html
+ERR: [msg] : E:\wamp\www\windphp\demo\admin\confing\conf..php does not exists! ; [file] : E:\wamp\www\windphp\Windphp\Core\Config.php; [line] : 66; [code] : 0
+[2016-10-25 18:59:46] 127.0.0.1 /?Login-Run-t-1477393183.html
+ERR: [msg] : Login 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LoginController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 302; [code] : 0
+[2016-10-25 19:01:08] 127.0.0.1 /?Login-Run-t-1477393183.html
+ERR: [msg] : Login 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LoginController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 302; [code] : 0
+[2016-10-25 19:02:18] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-25 19:02:20] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-26 10:35:06] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-26 10:35:50] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-27 17:22:55] 10.20.6.192 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-27 17:23:04] 10.20.6.192 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-27 17:23:46] 10.20.6.172 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-27 17:45:35] 10.20.6.192 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 294; [code] : 0
+[2016-10-27 17:49:21] 10.20.6.192 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 21:09:55] 127.0.0.1 /?Login-Run.html
+ERR: [msg] : Login 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LoginController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-27 21:11:00] 127.0.0.1 /?Login-Run.html
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Login\tpl.Run.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 68; [code] : 0
+[2016-10-27 21:25:01] 127.0.0.1 /?controller=Api&action=Checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+ERR: [msg] : Api 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\ApiController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-27 21:25:05] 127.0.0.1 /?controller=Api&action=Checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+ERR: [msg] : Api 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\ApiController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-27 21:25:12] 127.0.0.1 /?controller=Api&action=Checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+ERR: [msg] : Api 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\ApiController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-27 21:25:29] 127.0.0.1 /?controller=Api&action=Checkcode&code_len=4&font_size=20&width=130&height=50&font_color=&background=
+ERR: [msg] : Api 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\ApiController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-27 22:00:51] 127.0.0.1 /?Login-Submit.html
+ERR: [msg] : Submit 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:24:44] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:27:49] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:32:03] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:32:06] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:32:47] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:33:11] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:33:13] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:33:47] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-27 22:33:49] 127.0.0.1 /
+ERR: [msg] : Index 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 09:53:20] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : AdminUser 服务 不存在 - E:\wamp\www\windphp\demo\admin\services\AdminUserService.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 324; [code] : 0
+[2016-10-28 10:56:46] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : AdminOptLog dao 不存在 - E:\wamp\www\windphp\demo\admin\daos\AdminOptLogDao.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 343; [code] : 0
+[2016-10-28 11:04:43] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Index\tpl.Run.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0
+[2016-10-28 11:10:18] 127.0.0.1 /index.php?controller=Index&action=Main
+ERR: [msg] : Menu dao 不存在 - E:\wamp\www\windphp\demo\admin\daos\MenuDao.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 343; [code] : 0
+[2016-10-28 11:13:37] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:13:37] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:14:13] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:14:13] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:14:14] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:16:22] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:16:23] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:16:23] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:16:32] 127.0.0.1 /?action=login&action=out
+ERR: [msg] : Out 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 11:17:12] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:13] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:13] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:14] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:14] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:15] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:16] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+ERR: [msg] : Department 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\DepartmentController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:17] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+ERR: [msg] : Department 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\DepartmentController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:17] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:18] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:18] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:18] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:19] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:19] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:19] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:21] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:17:28] 127.0.0.1 /?controller=login&action=out
+ERR: [msg] : Out 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 11:19:41] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:20:33] 127.0.0.1 /?controller=login&action=out
+ERR: [msg] : Out 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 11:23:26] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : MyPanel 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MyPanelController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:24:08] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : ModifyInfo 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 11:32:08] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\myPanel\tpl.modifyInfo.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0
+[2016-10-28 11:32:39] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\myPanel\tpl.modifyInfo.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0
+[2016-10-28 11:44:14] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:44:29] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:44:30] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:44:31] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+ERR: [msg] : Administrators 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\AdministratorsController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 11:56:17] 127.0.0.1 /index.php?action=administrators&do=cedit&id=1
+ERR: [msg] : Administrators 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 12:19:40] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 12:25:49] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : RolePriv dao 不存在 - E:\wamp\www\windphp\demo\admin\daos\RolePrivDao.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 343; [code] : 0
+[2016-10-28 12:25:54] 127.0.0.1 /?Index-Run.html
+ERR: [msg] : RolePriv dao 不存在 - E:\wamp\www\windphp\demo\admin\daos\RolePrivDao.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 343; [code] : 0
+[2016-10-28 12:27:33] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 12:27:36] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 12:27:37] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 12:27:38] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 13:42:58] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 13:43:00] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+ERR: [msg] : Role 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\RoleController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 13:43:56] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 13:43:59] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:04:31] 127.0.0.1 /?action=role&do=privSetting&roleid=20
+ERR: [msg] : Role 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:16:29] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:34] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:35] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:36] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:37] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+ERR: [msg] : Department 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\DepartmentController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:37] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:38] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:38] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:16:40] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+ERR: [msg] : Department 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\DepartmentController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:17:27] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:21:51] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:21:55] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:21:57] 127.0.0.1 /?action=department&do=Cadd
+ERR: [msg] : Department 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:26:59] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:27:16] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:27:17] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:27:19] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : OptLog 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\OptLogController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:28:52] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : Run 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:31:44] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+ERR: [msg] : UserOptLog dao 不存在 - E:\wamp\www\windphp\demo\admin\daos\UserOptLogDao.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 343; [code] : 0
+[2016-10-28 14:37:55] 127.0.0.1 /index.php?action=OptLog&do=Run&uid=&start_time=2016-10-04+00%3A00%3A00&end_time=2016-10-28+00%3A00%3A00&dosearch=%E6%90%9C%E7%B4%A2
+ERR: [msg] : OptLog 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:38:04] 127.0.0.1 /index.php?action=OptLog&do=Run&uid=2&start_time=&end_time=&dosearch=%E6%90%9C%E7%B4%A2
+ERR: [msg] : OptLog 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:38:32] 127.0.0.1 /?action=OptLog&do=Run&uid=1&start_time=&end_time=&dosearch=%E6%90%9C%E7%B4%A2
+ERR: [msg] : OptLog 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:38:48] 127.0.0.1 /?action=OptLog&do=Run&uid=1&start_time=&end_time=&dosearch=%E6%90%9C%E7%B4%A2
+ERR: [msg] : OptLog 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:40:08] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:09] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:26] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:26] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:27] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:37] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:37] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:43] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:40:44] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : Menu 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\MenuController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:41:19] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : List 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:41:28] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : List 方法不存在！; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 296; [code] : 0
+[2016-10-28 14:47:13] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Menu\tpl.List.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0
+[2016-10-28 14:47:58] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:56:24] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 14:57:26] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 15:07:27] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 15:07:38] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : Linkage 控制器 不存在！ - E:\wamp\www\windphp\demo\admin\controllers\LinkageController.php ; [file] : E:\wamp\www\windphp\Windphp\Windphp.php; [line] : 304; [code] : 0
+[2016-10-28 15:16:00] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Linkage\tpl.Run.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0
+[2016-10-28 15:16:10] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+ERR: [msg] : 模板文件 E:\wamp\www\windphp\demo\admin\views\default\Linkage\tpl.Run.php 不存在。; [file] : E:\wamp\www\windphp\Windphp\Template\TplSmallTemplate.php; [line] : 69; [code] : 0

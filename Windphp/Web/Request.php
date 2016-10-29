@@ -79,7 +79,7 @@ class Request {
 	 * @param string $type input type (GET POST )
 	 * @return array string
 	 */
-	public static function getInput($name,$paramType='',$htmlspecialchars=true, $type = 'R', $bindKey = true) {
+	public static function getInput($name,$paramType='string',$htmlspecialchars=true, $type = 'R', $bindKey = true) {
 		if (is_array($name)) {
 			$result = array();
 			foreach ($name as $key => $value) {
