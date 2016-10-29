@@ -23617,3 +23617,503 @@ SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color
 SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
 [2016-10-28 18:36:30] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=5
 SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=5      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:49] 127.0.0.1 /?Login-Submit.html
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.01200008392334 秒</font>)
+[2016-10-29 15:03:49] 127.0.0.1 /?Login-Submit.html
+SQL: UPDATE `user`  SET     `lastloginip`='127.0.0.1' ,  `lastlogintime`='1477724629'  WHERE  `id`='1'    (<font color="red">0.0020010471343994 秒</font>)
+[2016-10-29 15:03:51] 127.0.0.1 /?Index-Run.html
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:51] 127.0.0.1 /?Index-Run.html
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0049998760223389 秒</font>)
+[2016-10-29 15:03:51] 127.0.0.1 /?Index-Run.html
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=0 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.0039999485015869 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Main
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Main
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Left&menuid=1
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Left&menuid=1
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Left&menuid=1
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=1 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:52] 127.0.0.1 /index.php?controller=Index&action=Left&menuid=1
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=2 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=5 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=6 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=7 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=8 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /index.php?action=Index&action=Left&menuid=5
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=22 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=5
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=5
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:03:53] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=5
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=5      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=9      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Run' ,  `get`='{"controller":"Administrators","action":"Run","menuid":"9"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724634'  (<font color="red">0.018001079559326 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT COUNT(*) as count FROM `user`        LIMIT 1  (<font color="red">0.002000093460083 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.002000093460083 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:03:54] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=9      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Run' ,  `get`='{"controller":"Administrators","action":"Run","menuid":"9"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724723'  (<font color="red">0.012001037597656 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT COUNT(*) as count FROM `user`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:05:23] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=9      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Run' ,  `get`='{"controller":"Administrators","action":"Run","menuid":"9"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724766'  (<font color="red">0.011999845504761 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT COUNT(*) as count FROM `user`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:06:06] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=205
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=205
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=205
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=205      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=205
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='8'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=205
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:13] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Linkage' ,  `action`='Run' ,  `get`='{"controller":"Linkage","action":"Run","menuid":"205"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724833'  (<font color="red">0.012000799179077 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+SQL: SELECT * FROM `linkage`   WHERE  `keyid`=0       (<font color="red">0.0060000419616699 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Linkage&action=Run&menuid=205
+SQL: SELECT COUNT(*) as count FROM `linkage`   WHERE  `keyid`=0 and  `parentid`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=13
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=13
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=13
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=13      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=13
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='8'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=13
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Menu' ,  `action`='List' ,  `get`='{"controller":"Menu","action":"List","menuid":"13"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724834'  (<font color="red">0.013000965118408 秒</font>)
+[2016-10-29 15:07:14] 127.0.0.1 /?controller=Menu&action=List&menuid=13
+SQL: SELECT * FROM `menu`   WHERE  `level` in('1')     ORDER BY listorder DESC,id DESC  LIMIT 1000  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=15      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='7'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:16] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010008811950684 秒</font>)
+[2016-10-29 15:07:17] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Role' ,  `action`='Run' ,  `get`='{"controller":"Role","action":"Run","menuid":"15"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724836'  (<font color="red">0.01200008392334 秒</font>)
+[2016-10-29 15:07:17] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT COUNT(*) as count FROM `role`        LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:17] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `role`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=201
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=201
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=201
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=201      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=201
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='22'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=201
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Department' ,  `action`='Run' ,  `get`='{"controller":"Department","action":"Run","menuid":"201"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724840'  (<font color="red">0.013000011444092 秒</font>)
+[2016-10-29 15:07:20] 127.0.0.1 /?controller=Department&action=Run&menuid=201
+SQL: SELECT * FROM `department`         (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=23
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=23
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=23      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=23
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='22'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=23
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='OptLog' ,  `action`='Run' ,  `get`='{"controller":"OptLog","action":"Run","menuid":"23"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724841'  (<font color="red">0.0039999485015869 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT COUNT(*) as count FROM `user_opt_log`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user_opt_log`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='OptLog' and  `action`='Run'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Department' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Role' and  `action`='Run'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Menu' and  `action`='List'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Linkage' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Administrators' and  `action`='Run'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Administrators' and  `action`='Run'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Administrators' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='myPanel' and  `action`='modifyInfo'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Administrators' and  `action`='Run'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Administrators' and  `action`='Cadd'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Role' and  `action`='Cadd'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Role' and  `action`='Run'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Menu' and  `action`='List'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Linkage' and  `action`='Run'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='OptLog' and  `action`='Run'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Department' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='OptLog' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Linkage' and  `action`='Run'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `user`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:21] 127.0.0.1 /?controller=OptLog&action=Run&menuid=23
+SQL: SELECT * FROM `menu`   WHERE  `controller`='Menu' and  `action`='List'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=9      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Run' ,  `get`='{"controller":"Administrators","action":"Run","menuid":"9"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724846'  (<font color="red">0.01200008392334 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT COUNT(*) as count FROM `user`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:26] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=10      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Cadd' ,  `get`='{"controller":"Administrators","action":"Cadd","menuid":"10"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724848'  (<font color="red">0.012001037597656 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `role`         (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:28] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `department`       ORDER BY id DESC   (<font color="red">0 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.002000093460083 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=12      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='7'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:29] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Role' ,  `action`='Cadd' ,  `get`='{"controller":"Role","action":"Cadd","menuid":"12"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724849'  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=12      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='7'      LIMIT 1  (<font color="red">0.0010011196136475 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=12
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:30] 127.0.0.1 /?controller=Role&action=Cadd&menuid=12
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Role' ,  `action`='Cadd' ,  `get`='{"controller":"Role","action":"Cadd","menuid":"12"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724850'  (<font color="red">0.012001037597656 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=15      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='7'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=15
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Role' ,  `action`='Run' ,  `get`='{"controller":"Role","action":"Run","menuid":"15"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724852'  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT COUNT(*) as count FROM `role`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:32] 127.0.0.1 /?controller=Role&action=Run&menuid=15
+SQL: SELECT * FROM `role`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=9      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=9
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Run' ,  `get`='{"controller":"Administrators","action":"Run","menuid":"9"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724854'  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT COUNT(*) as count FROM `user`        LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `user`       ORDER BY id desc  LIMIT 0,20  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:34] 127.0.0.1 /?controller=Administrators&action=Run&menuid=9
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='Administrators' ,  `action`='Cadd' ,  `get`='{"controller":"Administrators","action":"Cadd","menuid":"10"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724855'  (<font color="red">0.013000965118408 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `role`         (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Administrators&action=Cadd&menuid=10
+SQL: SELECT * FROM `department`       ORDER BY id DESC   (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=10      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='6'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=10
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='5'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=1
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=1
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /?controller=Index&action=CurrentPos&menuid=1
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=1      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /index.php?action=Index&action=Left&menuid=1
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /index.php?action=Index&action=Left&menuid=1
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /index.php?action=Index&action=Left&menuid=1
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=1 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:35] 127.0.0.1 /index.php?action=Index&action=Left&menuid=1
+SQL: SELECT * FROM `menu`   WHERE  `parentid`=2 and  `display`=1     ORDER BY listorder DESC  LIMIT 1000  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=3
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=3
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=3
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=3      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=3
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='2'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=3
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0020008087158203 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='MyPanel' ,  `action`='ModifyInfo' ,  `get`='{"controller":"MyPanel","action":"ModifyInfo","menuid":"3"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724856'  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:36] 127.0.0.1 /?controller=myPanel&action=modifyInfo&menuid=3
+SQL: SELECT * FROM `department`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=4
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.0010001659393311 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=4
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=4
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`=4      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=4
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='2'      LIMIT 1  (<font color="red">0 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?action=Index&action=CurrentPos&menuid=4
+SQL: SELECT id,name,parentid FROM `menu`   WHERE  `id`='1'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+SQL: SELECT * FROM `user`   WHERE  `username`='admin'      LIMIT 1  (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+SQL: SELECT * FROM `role`   WHERE  `id` in('1','19')       (<font color="red">0.00099992752075195 秒</font>)
+[2016-10-29 15:07:37] 127.0.0.1 /?controller=myPanel&action=modifyPassword&menuid=4
+SQL: INSERT INTO `user_opt_log` SET   `uid`='1' ,  `controller`='MyPanel' ,  `action`='ModifyPassword' ,  `get`='{"controller":"MyPanel","action":"ModifyPassword","menuid":"4"}' ,  `post`='[]' ,  `file`='[]' ,  `ip`='127.0.0.1' ,  `addtime`='1477724857'  (<font color="red">0.0019998550415039 秒</font>)

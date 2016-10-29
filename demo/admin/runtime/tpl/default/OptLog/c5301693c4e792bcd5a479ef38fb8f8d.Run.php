@@ -74,7 +74,7 @@ if(!defined('WINDPHP')) {exit('access error !');}
 	<div id="pages">
 		<div class="pre">
 		  共找到 <?php echo $total_count;?> 条记录，
-		  当前页（<?php echo $current_page;?>/<?php echo $total_count;?>页）
+		  当前页（<?php echo $current_page;?>/<?php echo  ceil($total_count/\Windphp\Core\Config::getSystem('page_rows'));?>页）
 		</div>
 		<div class="list"><?php echo $page;?></div>
 	</div>
