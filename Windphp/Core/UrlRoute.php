@@ -54,11 +54,15 @@ class UrlRoute {
 			if(isset($arr[1]) && !preg_match("/^\w+$/", $arr[1])){
 				throw new \Exception("access error !");
 			}
-			$_GET[self::$controller_name] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?htmlspecialchars(trim($arr[0])) : self::$controller;
-			 $_GET[self::$action_name] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? htmlspecialchars(trim($arr[1])) : self::$action;
+			$_GET[self::$controller_name] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?ucfirst(htmlspecialchars(trim($arr[0]))) : self::$controller;
+			 $_GET[self::$action_name] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? ucfirst(htmlspecialchars(trim($arr[1]))) : self::$action;
 			unset($arr,$num);
+		}else{
+			$_GET[self::$controller_name] = ucfirst($_GET[self::$controller_name]);
+			$_GET[self::$action_name] = ucfirst($_GET[self::$action_name]);
 		}
-		self::$current_controller = $_GET[self::$controller_name];
+		
+		self::$current_controller =  $_GET[self::$controller_name];
 		self::$current_action = $_GET[self::$action_name];
 	}
 	
