@@ -367,7 +367,7 @@ class UserDao extends IDao {
 	1、自己写的或者第三方的扩展组件，需要放在components目录下，命名格式为MyComponet.php,My是扩展组件的类名称 
 	   继承 IComponent 类 如
 ```php
-namespace components;
+namespace Components;
 
 
 use Windphp\Component\IComponent;
