@@ -363,8 +363,8 @@ class DbMysqli implements DbInterface  {
 						foreach ($v['in'] as  $imval){
 							$varr[] = mysqli_real_escape_string($this->mysqliLink,$imval);
 						}
-						$v = "'".implode("','", $varr)."'";
-						$where .= ' `'.$k.'` in('.$v.')'.$c;
+						$vv = "'".implode("','", $varr)."'";
+						$where .= ' `'.$k.'` in('.$vv.')'.$c;
 					} 
 					if(isset($v['like'])){
 						$where .= ' `'.$k.'` like \''.mysqli_real_escape_string($this->mysqliLink,$v['like']).'\'' .$c;
