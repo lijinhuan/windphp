@@ -405,7 +405,7 @@ class DbMysqli implements DbInterface  {
 					}
 				}
 			}else{
-				if($k=='sql_where_sepcial'){
+				if($k=='sql_where_special'){
 					$where .= $v. " ".$c;
 				}else{
 					$where .= ' `'.$k.'`='."'" . mysqli_real_escape_string($this->mysqliLink,$v) . "'".$c;
