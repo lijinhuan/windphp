@@ -18,7 +18,6 @@ return array(
 				'page_rows' => 20,
 				'support_cache' => array('memcache','redis','file'),
 				'default_action' => 'Run',
-		
 		);
 			
 ?>

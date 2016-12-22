@@ -21,6 +21,7 @@ class Config {
 	public static function loadSystem($configPath) {
 		self::$systemConfig = require $configPath;
 		$check_config = false;
+		!isset(self::$systemConfig['environment']) and self::$systemConfig['environment']='produce';
 		if(isset(self::$systemConfig['environment']) and self::$systemConfig['environment']){
 			$conf_file = Windphp::getConfigPath().'conf.'.self::$systemConfig['environment'].'.php';
 			if(!is_file($conf_file)){
@@ -29,6 +30,7 @@ class Config {
 			self::$systemConfig += require $conf_file;
 			$check_config = true;
 		}else{
+			//remove this code
 			foreach (self::$systemConfig['servers_hostname'] as $key=>$val){
 				if(in_array(gethostname(),$val)){
 					self::$systemConfig['environment'] = $key;
