@@ -84,10 +84,7 @@ class BuildApp {
 <?php
 		
 return array(
-				'servers_hostname' => array(
-	        				'produce' => array('{$hostname}'),
-	        				'online' => array(''),
-	        	),
+				'environment' => 'produce',
 				'autokey' => '{$uuid}',//不能删除应用唯一识别id
 				'timezone' => 'Asia/Shanghai',
 				'template_syntax' => 'smallTemplate',

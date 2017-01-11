@@ -22,35 +22,11 @@ class Config {
 		self::$systemConfig = require $configPath;
 		$check_config = false;
 		!isset(self::$systemConfig['environment']) and self::$systemConfig['environment']='produce';
-		if(isset(self::$systemConfig['environment']) and self::$systemConfig['environment']){
-			$conf_file = Windphp::getConfigPath().'conf.'.self::$systemConfig['environment'].'.php';
-			if(!is_file($conf_file)){
-				throw new \Exception($conf_file." does not exists! ");
-			}
-			self::$systemConfig += require $conf_file;
-			$check_config = true;
-		}else{
-			//remove this code
-			foreach (self::$systemConfig['servers_hostname'] as $key=>$val){
-				if(in_array(gethostname(),$val)){
-					self::$systemConfig['environment'] = $key;
-					$conf_file = Windphp::getConfigPath().'conf.'.self::$systemConfig['environment'].'.php';
-					if(!is_file($conf_file)){
-						throw new \Exception($conf_file." does not exists! ");
-					}
-					self::$systemConfig += require $conf_file;
-					$check_config = true;
-					break;
-				}
-			}
+		$conf_file = Windphp::getConfigPath().'conf.'.self::$systemConfig['environment'].'.php';
+		if(!is_file($conf_file)){
+			throw new \Exception($conf_file." does not exists! ");
 		}
-		if(!$check_config){
-			
-			exit("environment servers_hostname in conf.inc.php not found ! <br/> please use like 'servers_hostname' => array(
-	        				'produce' => array('".gethostname()."'),
-	        				'online' => array(''),
-	        	) <br/> and your hostname is <font color=red>".gethostname()."</font>");
-		}
+		self::$systemConfig += require $conf_file;
 		return self::$systemConfig;
 	}
 	
