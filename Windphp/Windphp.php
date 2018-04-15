@@ -18,6 +18,7 @@ use Windphp\Dao\IDao;
 
 class Windphp {
 	
+	public static $windphp_version = '2.0';
 	
 	private static $frameWorkClass = array(
 				'BuildApp' =>	'Windphp/Core/BuildApp.php',
@@ -75,12 +76,12 @@ class Windphp {
 	public static $create_mode = 'web';
 	
 	
-	public function getRootPath() {
+	public static function getRootPath() {
 		return self::$rootPath;
 	}
 	
 	
-	public function setRootPath($path) {
+	public static function setRootPath($path) {
 		self::$rootPath = $path;
 	}
 	
@@ -141,7 +142,8 @@ class Windphp {
 	private static function  init($rootPath) {
 		PHP_VERSION < '5.3' && exit('php version error ,  must > 5.3.0 ！');
 		$_SERVER['time'] = time();
-		define('WINDPHP', 2.0);
+		$windphp = self::$windphp_version;
+		define('WINDPHP', $windphp);
 		defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 		self::$windphpFrameworkPath = dirname(__DIR__).DS;
 		self::$rootPath = $rootPath;
@@ -169,7 +171,7 @@ class Windphp {
 	 * @param string $root_path 业务逻辑所在的根目录
 	 */
 	public  static function	createWebApplication($rootPath) {
-		header('X-Powered-By: Windphp;');
+		header('X-Powered-By: Windphp '.self::$windphp_version.';');
 		header("Expires: 0");
 		header("Cache-Control: private, post-check=0, pre-check=0, max-age=0");
 		header("Pragma: no-cache");

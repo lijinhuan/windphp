@@ -12,7 +12,9 @@ namespace Windphp\Misc;
 
 
  
- class ShowPage {
+ use Windphp\Core\Config;
+use Windphp\Web\Request;
+		class ShowPage {
 	public $show_go = true;
  	
  	private $url_write = array();
@@ -315,6 +317,22 @@ namespace Windphp\Misc;
 		$sp -> setVar($pagevars);
 		$sp -> setAdmin($pageRows, $totalCount,$currentPage);
 		return $sp -> outPut(true);
+	}
+	
+	
+	
+	public static function getCurPage() {
+		$page_var = isset(Config::$systemConfig['page_var'])?Config::getSystem('page_var') :'page';
+		$page = abs(Request::getInput($page_var,'string'));
+		$page =  min($page,Config::getSystem('maxpage'));
+		if($page<1){$page = 1;}
+		return $page;
+	}
+	
+	
+	public static  function getPageQueryLimit() {
+		$limit_start = (self::getCurPage()-1)*Config::getSystem('page_rows');
+		return $limit_start.','.Config::getSystem('page_rows');
 	}
     
     

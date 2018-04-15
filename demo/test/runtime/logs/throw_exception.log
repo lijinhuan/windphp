@@ -1,0 +1,14 @@
+[2016-09-12 18:10:40] ::1 /windphp/demo/test/webroot/?id=2
+ERR: [msg] : Error:La table 'test.shop' n'existe pas   (<font color=blue>SELECT * FROM `shop`   WHERE  `id`=2      LIMIT 1</font>); [file] : E:\wamp\www\windphp\Windphp\Db\DbMysqli.php; [line] : 98; [code] : 0
+[2016-09-12 18:26:41] ::1 /windphp/demo/test/webroot/?controller=Fetch
+ERR: [msg] : table database not exists !; [file] : E:\wamp\www\windphp\Windphp\Dao\IDao.php; [line] : 40; [code] : 0
+[2016-09-12 18:26:58] ::1 /windphp/demo/test/webroot/?controller=Fetch
+ERR: [msg] : comment_vest database not exists !; [file] : E:\wamp\www\windphp\Windphp\Dao\IDao.php; [line] : 40; [code] : 0
+[2016-09-12 18:27:08] ::1 /windphp/demo/test/webroot/?controller=Fetch
+ERR: [msg] : test database not exists !; [file] : E:\wamp\www\windphp\Windphp\Dao\IDao.php; [line] : 40; [code] : 0
+[2016-09-12 18:27:48] ::1 /windphp/demo/test/webroot/?controller=Fetch
+ERR: [msg] : Error:La table 'test.comment_vest' n'existe pas   (<font color=blue>SELECT * FROM `comment_vest`   WHERE  `content`='好厉害哦' and  `type`='3'      LIMIT 1</font>); [file] : E:\wamp\www\windphp\Windphp\Db\DbMysqli.php; [line] : 98; [code] : 0
+[2016-09-14 14:28:33] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+ERR: [msg] : test database , mysqli connect error ; [file] : E:\wamp\www\windphp\Windphp\Db\DbMysqli.php; [line] : 68; [code] : 0
+[2016-09-14 14:28:48] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+ERR: [msg] : test database , mysqli connect error ; [file] : E:\wamp\www\windphp\Windphp\Db\DbMysqli.php; [line] : 68; [code] : 0

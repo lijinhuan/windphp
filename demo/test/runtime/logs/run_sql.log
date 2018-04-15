@@ -1,0 +1,844 @@
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100749'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100750'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100751'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100752'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100753'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100754'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100755'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100756'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100757'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100758'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100759'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100760'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100761'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100762'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100763'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100764'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100765'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100766'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100767'    (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100768'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100769'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100770'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100771'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100772'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100773'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100774'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100775'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100776'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100777'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100778'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100779'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100780'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100781'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100782'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100783'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100784'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100785'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100786'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100787'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100788'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100789'    (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100790'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100791'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100792'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100793'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100794'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100795'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100796'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100797'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100798'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100799'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100800'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100801'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100802'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100803'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100804'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100805'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100806'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100807'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100808'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100809'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100810'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100811'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100812'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100813'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100814'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100815'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100816'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100817'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100818'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100819'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100820'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100821'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100822'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100823'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100824'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100825'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100826'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100827'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100828'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100829'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100830'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100831'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100832'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100833'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100834'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100835'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100836'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100837'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100838'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100839'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100840'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100841'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100842'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100843'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100844'    (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100845'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100846'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100847'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100848'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100849'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100850'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100851'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100852'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100853'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100854'    (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100855'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100856'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100857'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100858'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100859'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100860'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100861'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100862'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100863'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100864'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100865'    (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100866'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100867'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100868'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100869'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100870'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100871'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100872'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100873'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100874'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100875'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100876'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100877'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100878'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100879'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100880'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100881'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100882'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100883'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100884'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100885'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100886'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100887'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100888'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100889'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100890'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100891'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100892'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100893'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100894'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100895'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100896'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100897'    (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100898'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100899'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100900'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100901'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100902'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100903'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100904'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100905'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100906'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100907'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100908'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100909'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100910'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100911'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100912'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100913'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100914'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100915'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100916'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100917'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100918'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100919'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100920'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100921'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100922'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100923'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100924'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100925'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100926'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100927'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100928'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100929'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100930'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100931'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100932'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100933'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100934'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100935'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100936'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100937'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100938'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100939'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100940'    (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100941'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100942'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100943'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100944'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100945'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100946'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100947'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100948'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100949'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100950'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100951'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100952'    (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100953'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100954'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100955'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100956'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100957'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100958'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100959'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100960'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100961'    (<font color="red">0.0020010471343994 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100962'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100963'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100964'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100965'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100966'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100967'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100968'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100969'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100970'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100971'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100972'    (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100973'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100974'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100975'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100976'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100977'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100978'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100979'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100980'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100981'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100982'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100983'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100984'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100985'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100986'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100987'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100988'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100989'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100990'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100991'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100992'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100993'    (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100994'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100995'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100996'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100997'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100998'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='100999'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101000'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101001'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101002'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101003'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101004'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101005'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101006'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101007'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101008'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101009'    (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101010'    (<font color="red">0 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101011'    (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:05:59] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: UPDATE `user`  SET     `date`='20160522' ,  `month`='201605'  WHERE  `id`='101012'    (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: SELECT count(*) as num,date FROM `user` group by date order by date asc  (<font color="red">0.0049998760223389 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160415' ,  `userRegister`='1' ,  `totalUser`=1  (<font color="red">0.012001037597656 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160416' ,  `userRegister`='18' ,  `totalUser`=19  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160417' ,  `userRegister`='1' ,  `totalUser`=20  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160418' ,  `userRegister`='3' ,  `totalUser`=23  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160420' ,  `userRegister`='1' ,  `totalUser`=24  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160421' ,  `userRegister`='1' ,  `totalUser`=25  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160423' ,  `userRegister`='1' ,  `totalUser`=26  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160425' ,  `userRegister`='2' ,  `totalUser`=28  (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160426' ,  `userRegister`='13' ,  `totalUser`=41  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160427' ,  `userRegister`='23' ,  `totalUser`=64  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160428' ,  `userRegister`='9' ,  `totalUser`=73  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160429' ,  `userRegister`='2' ,  `totalUser`=75  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160430' ,  `userRegister`='3' ,  `totalUser`=78  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160501' ,  `userRegister`='7' ,  `totalUser`=85  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160502' ,  `userRegister`='3' ,  `totalUser`=88  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160503' ,  `userRegister`='8' ,  `totalUser`=96  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160504' ,  `userRegister`='8' ,  `totalUser`=104  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160505' ,  `userRegister`='10' ,  `totalUser`=114  (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160506' ,  `userRegister`='14' ,  `totalUser`=128  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160507' ,  `userRegister`='6' ,  `totalUser`=134  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160508' ,  `userRegister`='3' ,  `totalUser`=137  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160509' ,  `userRegister`='16' ,  `totalUser`=153  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160510' ,  `userRegister`='24' ,  `totalUser`=177  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160511' ,  `userRegister`='20' ,  `totalUser`=197  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160512' ,  `userRegister`='12' ,  `totalUser`=209  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160513' ,  `userRegister`='12' ,  `totalUser`=221  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160514' ,  `userRegister`='34' ,  `totalUser`=255  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160515' ,  `userRegister`='36' ,  `totalUser`=291  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160516' ,  `userRegister`='26' ,  `totalUser`=317  (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160517' ,  `userRegister`='22' ,  `totalUser`=339  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160518' ,  `userRegister`='50' ,  `totalUser`=389  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160519' ,  `userRegister`='35' ,  `totalUser`=424  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160520' ,  `userRegister`='48' ,  `totalUser`=472  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160521' ,  `userRegister`='101' ,  `totalUser`=573  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160522' ,  `userRegister`='501' ,  `totalUser`=1074  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160523' ,  `userRegister`='391' ,  `totalUser`=1465  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160524' ,  `userRegister`='303' ,  `totalUser`=1768  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160525' ,  `userRegister`='186' ,  `totalUser`=1954  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160526' ,  `userRegister`='68' ,  `totalUser`=2022  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160527' ,  `userRegister`='35' ,  `totalUser`=2057  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160528' ,  `userRegister`='18' ,  `totalUser`=2075  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160529' ,  `userRegister`='25' ,  `totalUser`=2100  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160530' ,  `userRegister`='11' ,  `totalUser`=2111  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160531' ,  `userRegister`='9' ,  `totalUser`=2120  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160601' ,  `userRegister`='37' ,  `totalUser`=2157  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160602' ,  `userRegister`='20' ,  `totalUser`=2177  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160603' ,  `userRegister`='18' ,  `totalUser`=2195  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160604' ,  `userRegister`='16' ,  `totalUser`=2211  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160605' ,  `userRegister`='8' ,  `totalUser`=2219  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160606' ,  `userRegister`='12' ,  `totalUser`=2231  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160607' ,  `userRegister`='12' ,  `totalUser`=2243  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160608' ,  `userRegister`='14' ,  `totalUser`=2257  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160609' ,  `userRegister`='5' ,  `totalUser`=2262  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160610' ,  `userRegister`='14' ,  `totalUser`=2276  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160611' ,  `userRegister`='9' ,  `totalUser`=2285  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160612' ,  `userRegister`='12' ,  `totalUser`=2297  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160613' ,  `userRegister`='11' ,  `totalUser`=2308  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160614' ,  `userRegister`='27' ,  `totalUser`=2335  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160615' ,  `userRegister`='15' ,  `totalUser`=2350  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160616' ,  `userRegister`='14' ,  `totalUser`=2364  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160617' ,  `userRegister`='24' ,  `totalUser`=2388  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160618' ,  `userRegister`='18' ,  `totalUser`=2406  (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160619' ,  `userRegister`='7' ,  `totalUser`=2413  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160620' ,  `userRegister`='72' ,  `totalUser`=2485  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160621' ,  `userRegister`='125' ,  `totalUser`=2610  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160622' ,  `userRegister`='98' ,  `totalUser`=2708  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160623' ,  `userRegister`='96' ,  `totalUser`=2804  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160624' ,  `userRegister`='73' ,  `totalUser`=2877  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160625' ,  `userRegister`='101' ,  `totalUser`=2978  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160626' ,  `userRegister`='83' ,  `totalUser`=3061  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160627' ,  `userRegister`='220' ,  `totalUser`=3281  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160628' ,  `userRegister`='98' ,  `totalUser`=3379  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160629' ,  `userRegister`='87' ,  `totalUser`=3466  (<font color="red">0.0010011196136475 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160630' ,  `userRegister`='67' ,  `totalUser`=3533  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160701' ,  `userRegister`='53' ,  `totalUser`=3586  (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160702' ,  `userRegister`='19' ,  `totalUser`=3605  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160703' ,  `userRegister`='14' ,  `totalUser`=3619  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160704' ,  `userRegister`='6' ,  `totalUser`=3625  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160705' ,  `userRegister`='12' ,  `totalUser`=3637  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160706' ,  `userRegister`='17' ,  `totalUser`=3654  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160707' ,  `userRegister`='10' ,  `totalUser`=3664  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160708' ,  `userRegister`='8' ,  `totalUser`=3672  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160709' ,  `userRegister`='4' ,  `totalUser`=3676  (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160710' ,  `userRegister`='4' ,  `totalUser`=3680  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160711' ,  `userRegister`='4' ,  `totalUser`=3684  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160712' ,  `userRegister`='4' ,  `totalUser`=3688  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160713' ,  `userRegister`='7' ,  `totalUser`=3695  (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160714' ,  `userRegister`='5' ,  `totalUser`=3700  (<font color="red">0.0030012130737305 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160715' ,  `userRegister`='5' ,  `totalUser`=3705  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160716' ,  `userRegister`='5' ,  `totalUser`=3710  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160717' ,  `userRegister`='1' ,  `totalUser`=3711  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160718' ,  `userRegister`='7' ,  `totalUser`=3718  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160719' ,  `userRegister`='5' ,  `totalUser`=3723  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160720' ,  `userRegister`='9' ,  `totalUser`=3732  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160721' ,  `userRegister`='2' ,  `totalUser`=3734  (<font color="red">0.0020008087158203 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160722' ,  `userRegister`='3' ,  `totalUser`=3737  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160723' ,  `userRegister`='8' ,  `totalUser`=3745  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160724' ,  `userRegister`='7' ,  `totalUser`=3752  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160725' ,  `userRegister`='9' ,  `totalUser`=3761  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160726' ,  `userRegister`='14' ,  `totalUser`=3775  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160727' ,  `userRegister`='10' ,  `totalUser`=3785  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160728' ,  `userRegister`='7' ,  `totalUser`=3792  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160729' ,  `userRegister`='9' ,  `totalUser`=3801  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160730' ,  `userRegister`='16' ,  `totalUser`=3817  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160731' ,  `userRegister`='3' ,  `totalUser`=3820  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160801' ,  `userRegister`='9' ,  `totalUser`=3829  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160802' ,  `userRegister`='9' ,  `totalUser`=3838  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160803' ,  `userRegister`='19' ,  `totalUser`=3857  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160804' ,  `userRegister`='17' ,  `totalUser`=3874  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160805' ,  `userRegister`='21' ,  `totalUser`=3895  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160806' ,  `userRegister`='10' ,  `totalUser`=3905  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160807' ,  `userRegister`='8' ,  `totalUser`=3913  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160808' ,  `userRegister`='15' ,  `totalUser`=3928  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160809' ,  `userRegister`='6' ,  `totalUser`=3934  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160810' ,  `userRegister`='11' ,  `totalUser`=3945  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160811' ,  `userRegister`='15' ,  `totalUser`=3960  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160812' ,  `userRegister`='12' ,  `totalUser`=3972  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160813' ,  `userRegister`='10' ,  `totalUser`=3982  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160814' ,  `userRegister`='14' ,  `totalUser`=3996  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160815' ,  `userRegister`='7' ,  `totalUser`=4003  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160816' ,  `userRegister`='14' ,  `totalUser`=4017  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160817' ,  `userRegister`='12' ,  `totalUser`=4029  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160818' ,  `userRegister`='9' ,  `totalUser`=4038  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160819' ,  `userRegister`='8' ,  `totalUser`=4046  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160820' ,  `userRegister`='9' ,  `totalUser`=4055  (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160821' ,  `userRegister`='3' ,  `totalUser`=4058  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160822' ,  `userRegister`='6' ,  `totalUser`=4064  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160823' ,  `userRegister`='9' ,  `totalUser`=4073  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160824' ,  `userRegister`='13' ,  `totalUser`=4086  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160825' ,  `userRegister`='16' ,  `totalUser`=4102  (<font color="red">0.0019998550415039 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160826' ,  `userRegister`='7' ,  `totalUser`=4109  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160827' ,  `userRegister`='5' ,  `totalUser`=4114  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160828' ,  `userRegister`='6' ,  `totalUser`=4120  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160829' ,  `userRegister`='11' ,  `totalUser`=4131  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160830' ,  `userRegister`='15' ,  `totalUser`=4146  (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160831' ,  `userRegister`='17' ,  `totalUser`=4163  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160901' ,  `userRegister`='5' ,  `totalUser`=4168  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160902' ,  `userRegister`='9' ,  `totalUser`=4177  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160903' ,  `userRegister`='6' ,  `totalUser`=4183  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160904' ,  `userRegister`='3' ,  `totalUser`=4186  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160905' ,  `userRegister`='8' ,  `totalUser`=4194  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160906' ,  `userRegister`='7' ,  `totalUser`=4201  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160907' ,  `userRegister`='31' ,  `totalUser`=4232  (<font color="red">0 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160908' ,  `userRegister`='26' ,  `totalUser`=4258  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160909' ,  `userRegister`='17' ,  `totalUser`=4275  (<font color="red">0.0010008811950684 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160910' ,  `userRegister`='9' ,  `totalUser`=4284  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160911' ,  `userRegister`='15' ,  `totalUser`=4299  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160912' ,  `userRegister`='14' ,  `totalUser`=4313  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160913' ,  `userRegister`='21' ,  `totalUser`=4334  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:07:57] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `day_analysis` SET   `day`='20160914' ,  `userRegister`='6' ,  `totalUser`=4340  (<font color="red">0.002000093460083 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: SELECT count(*) as num,month FROM `user` group by month order by month asc  (<font color="red">0.0060000419616699 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201604' ,  `userRegister`='78' ,  `totalUser`=78  (<font color="red">0.012001037597656 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201605' ,  `userRegister`='2042' ,  `totalUser`=2120  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201606' ,  `userRegister`='1413' ,  `totalUser`=3533  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201607' ,  `userRegister`='287' ,  `totalUser`=3820  (<font color="red">0.0010001659393311 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201608' ,  `userRegister`='343' ,  `totalUser`=4163  (<font color="red">0.00099992752075195 秒</font>)
+[2016-09-14 16:08:21] ::1 /windphp/demo/test/webroot/?controller=Fetch&action=changeUser
+SQL: REPLACE INTO `month_analysis` SET   `month`='201609' ,  `userRegister`='177' ,  `totalUser`=4340  (<font color="red">0.0010001659393311 秒</font>)

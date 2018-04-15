@@ -16,16 +16,20 @@ use Windphp\Misc\Utils;
 use Windphp\Windphp;
 class UrlRoute {
 	
-	private static $controller = 'Index';
-	private static $action = 'Index';
-	private static $controller_name = 'controller';
-	private static $action_name = 'action';
+	public static $controller = 'Index';
+	public static $action = 'Index';
+	public static $controller_name = 'controller';
+	public static $action_name = 'action';
+	public static $current_controller = '';
+	public static $current_action = '';
 	
 	
 	/**
 	 * @todo 请求初始化
 	 */
 	public static function initGet(){
+		if(Config::getSystem('default_controller',false))self::$controller = Config::getSystem('default_controller',false);
+		if(Config::getSystem('default_action',false))self::$action = Config::getSystem('default_action',false);
 		(!isset($_SERVER['REQUEST_URI']) || (isset($_SERVER['HTTP_X_REWRITE_URL']) && $_SERVER['REQUEST_URI'] != $_SERVER['HTTP_X_REWRITE_URL'])) && self::__requestUriFix();
 		!isset($_GET[self::$controller_name]) && $_GET[self::$controller_name] = self::$controller;
 		!isset($_GET[self::$action_name]) && $_GET[self::$action_name] = self::$action;
@@ -50,10 +54,16 @@ class UrlRoute {
 			if(isset($arr[1]) && !preg_match("/^\w+$/", $arr[1])){
 				throw new \Exception("access error !");
 			}
-			$_GET[self::$controller_name] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?trim($arr[0]) : self::$controller;
-			$_GET[self::$action_name] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? trim($arr[1]) : self::$action;
+			$_GET[self::$controller_name] = isset($arr[0]) && preg_match("/^\w+$/", $arr[0]) ?ucfirst(htmlspecialchars(trim($arr[0]))) : self::$controller;
+			 $_GET[self::$action_name] = isset($arr[1]) && preg_match("/^\w+$/", $arr[1]) ? ucfirst(htmlspecialchars(trim($arr[1]))) : self::$action;
 			unset($arr,$num);
+		}else{
+			$_GET[self::$controller_name] = ucfirst($_GET[self::$controller_name]);
+			$_GET[self::$action_name] = ucfirst($_GET[self::$action_name]);
 		}
+		
+		self::$current_controller =  $_GET[self::$controller_name];
+		self::$current_action = $_GET[self::$action_name];
 	}
 	
 	

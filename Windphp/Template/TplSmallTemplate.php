@@ -15,6 +15,7 @@ use Windphp\Core\Config;
 use Windphp\Web\Request;
 use Windphp\Windphp;
 use Windphp\Misc\FileDir;
+use Windphp\Core\UrlRoute;
 class TplSmallTemplate implements TplInterface {
 	
 	public $vars = array();			//变量表
@@ -30,8 +31,8 @@ class TplSmallTemplate implements TplInterface {
 	
 	public function __construct(){
 		$this->conf = Config::$systemConfig;
-		$this->conf['action'] = ucfirst(Request::getInput('action'));
-		$this->conf['controller'] = ucfirst(Request::getInput('controller'));
+		$this->conf['action'] = UrlRoute::$current_action;
+		$this->conf['controller'] = UrlRoute::$current_controller;
 		if(isset($this->conf['tpl_tag']) and !empty($this->conf['tpl_tag'])){
 			$this->tag_left = $this->conf['tpl_tag']['left'];
 			$this->tag_right = $this->conf['tpl_tag']['right'];
